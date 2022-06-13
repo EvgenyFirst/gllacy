@@ -1,2 +1,3 @@
-# gllacy
-Gllacy © HTML Academy https://htmlacademy.ru
+Gllacy
+
+© HTML Academy https://htmlacademy.ru
