@@ -1,0 +1,576 @@
+/* main settings (start) */
+:root {
+  --mint-color: #849d8f;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --rgba-lighter-black-color: rgba(255, 255, 255, 0.2);
+  --light-black-color: #5a5a5a;
+  --lighter-black-color: #323232;
+  --lite-orange-color: #f26843;
+  --darker-orange-color: #e74a35;
+  --rgba-darker-orange-color: rgba(172, 16, 0, 0.64);
+  --bright-purple-color: #e951e9;
+  --brown-color: #7a0004;
+  --lite-dark-brown-color: #9d8b84;
+  --beige-color: #f5f5dc;
+  --rgba-light-grey-color: rgba(50, 50, 50, 0.2);
+  --rgba-darker-red-color: rgba(160, 32, 11, 0.76);
+  --lite-dark-blue-color: #8996a6;
+  --rgba-lite-black-blue-color: rgba(49, 50, 53, 0.5);
+  --lighter-grey-color: #999999;
+  --lite-grey-color: #f8f7f4;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("RobotoBold"), url("../fonts/Roboto-Bold.ttf") format("ttf");
+  src: local("RobotoLight"), url("../fonts/Roboto-Light.ttf") format("ttf");
+  src: local("RobotoMedium"), url("../fonts/Roboto-Medium.ttf") format("ttf");
+  src: local("RobotoRegular"), url("../fonts/Roboto-Regular.ttf") format("ttf");
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Roboto", "Ar1al", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--black-color);
+  /* background-image: url("/Index.jpg");
+  background-position-x: center;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+
+  background-image:url("/catalog.jpg"); background-position-x:center; background-repeat:no-repeat; opacity:0.5;
+  background-image:url("/popup.jpg"); background-position-x:center; background-repeat:no-repeat; opacity:0.5;}
+
+  body {width:1200px; min-width:320px; height:auto;
+  position:relative;
+  padding:0 calc(17px - (100vw - 100%)) 0 0;/* margin-right: calc(-1 * (100vw - 100%)); */
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+img {
+  max-width: 100%;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.slider-one-active {
+  background-color: var(--mint-color);
+}
+
+.slider-two-active {
+  background-color: var(--lite-dark-blue-color);
+}
+
+.slider-three-active {
+  background-color: var(--lite-dark-brown-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin: -1px;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  border: 0;
+}
+
+/* Header (start) */
+.ice-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ice-header__item {
+  list-style: none;
+}
+
+.ice-header__inner-add {
+  padding-left: 0;
+
+  background-color: var(--white-color);
+}
+
+.ice-header__item-add {
+  list-style: none;
+
+  padding-right: 9px;
+  padding-left: 6px;
+}
+
+.ice-header__item-add-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--lighter-black-color);
+
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.ice-header__item-add:first-child:after {
+  content: " ";
+  display: block;
+  border: 1px solid var(--rgba-light-grey-color);
+}
+
+.ice-header__item-link-inner {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--lighter-black-color);
+}
+
+.ice-header__item-link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--white-color);
+}
+
+.ice-header__inner-wrapper {
+  list-style: none;
+}
+
+.ice-header__wrapper-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--white-color);
+}
+
+.ice-header__wrapper-item-button {
+  padding-left: 0;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--white-color);
+
+  background: transparent;
+  border: none;
+}
+
+.ice-header__wrapper-days {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--white-color);
+}
+
+.ice-header__wrapper-tel {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 24px;
+  color: var(--white-color);
+}
+
+/* Header (end) */
+/* --- */
+/* Slider (start) */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content__bread-crumbs-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--white-color);
+}
+
+.main-content__bread-crumbs-wrapper {
+  list-style: none;
+}
+
+.main-content__bread-crumbs-link-active::after {
+  content: " ";
+  display: block;
+
+  width: auto;
+
+  border-bottom: 1px solid var(--white-color);
+  opacity: 0.2;
+}
+
+.main-content__empty-page {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 24px;
+  color: var(--black-color);
+}
+
+.main-content__option-slide-one {
+  background-color: var(--mint-color);
+}
+
+.main-content__option-slide-two {
+  background-color: var(--lite-dark-blue-color);
+}
+
+.main-content__option-slide-three {
+  background-color: var(--lite-dark-brown-color);
+}
+
+.main-content__option-product-header {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+
+  color: var(--white-color);
+}
+
+.main-content__option-product-button {
+  background: linear-gradient(180deg, var(--lite-orange-color) 0, var(--darker-orange-color) 100%);
+  box-shadow: 0 2px 2px var(--rgba-darker-orange-color);
+  border-radius: 70px;
+  border: none;
+
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+
+  letter-spacing: 0.05em;
+
+  color: var(--white-color);
+
+  text-shadow: 0 2px 5px var(--rgba-darker-red-color);
+}
+
+.main-content__paginator-wrapper {
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-content__paginator-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--white-color);
+}
+
+.main-content__paginator-link-arrow {
+  color: var(--rgba-lighter-black-color);
+}
+
+.main-content__paginator-link-active {
+  color: var(--lighter-black-color);
+
+  width: 26px;
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  background-color: var(--white-color);
+}
+
+.main-content__paginator-link-active:hover {
+  cursor: default;
+}
+
+.main-content__group-ice {
+  list-style: none;
+}
+
+.main-content__ice-item-add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 61px;
+  min-height: 61px;
+
+  border-radius: 50%;
+
+  background-color: var(--white-color);
+}
+
+.main-content__ice-price-text {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 45px;
+
+  color: var(--white-color);
+
+  text-shadow: 0 1px 3px var(--rgba-lite-black-blue-color);
+}
+
+.main-content__ice-price-text-span {
+  font-size: 30px;
+}
+
+.main-content__ice-price-text-header {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: var(--white-color);
+}
+
+.main-content__group-button {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--white-color);
+  text-shadow: 0 2px 5px var(--rgba-darker-red-color);
+}
+
+/* Slider (end) */
+/* --- */
+/* Дополнения и мороженое (start) */
+.main-content__group-text {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 41px;
+  color: var(--white-color);
+}
+
+.main-content__group-info {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--white-color);
+}
+
+.main-content__group-add-one {
+  background-color: var(--bright-purple-color);
+}
+
+.main-content__group-add-two {
+  background-color: var(--brown-color);
+}
+
+.main-content__group-button {
+  background: linear-gradient(180deg, var(--lite-orange-color) 0, var(--darker-orange-color) 100%);
+  box-shadow: 0 2px 2px var(--rgba-darker-orange-color);
+  border-radius: 70px;
+  border: none;
+}
+
+/* Дополнения и мороженое (end) */
+/* --- */
+/* Информация о магазине Глэйси, новости, подписка (start) */
+.main-content__info-shop {
+  background-color: var(--beige-color);
+}
+
+.main-content__shop-header {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--lighter-black-color);
+}
+
+.main-content__shop-item-info {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--lighter-black-color);
+}
+
+.main-content__info-article {
+  background-color: var(--white-color);
+}
+
+.main-content__info-article {
+  border-radius: 16px;
+
+  background-color: var(--white-color);
+}
+
+.main-content__article-header {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--lighter-black-color);
+}
+
+.main-content__article-link {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--lighter-black-color);
+
+  position: relative;
+}
+
+.main-content__article-link:after {
+  content: " ";
+  display: inline-block;
+
+  width: 97%;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  border-bottom: 2px solid var(--lighter-black-color);
+}
+
+.main-content__info-article-add {
+  background-color: var(--lite-grey-color);
+}
+
+.main-content__article-add-info {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--light-black-color);
+}
+
+.main-content__article-add-form-placeholder::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--lighter-grey-color);
+}
+
+.main-content__article-add-button {
+  background: linear-gradient(180deg, var(--lite-orange-color) 0, var(--darker-orange-color) 100%);
+  box-shadow: 0 2px 2px var(--rgba-darker-orange-color);
+  border-radius: 70px;
+  border: none;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--white-color);
+
+  text-shadow: 0 2px 5px var(--rgba-darker-red-color);
+}
+
+/* Информация о магазине Глэйси, новости, подписка (end) */
+/* --- */
+/* Карта (start) */
+.map__wrapper {
+  border-radius: 16px;
+
+  background: var(--white-color);
+}
+
+.map__info {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--lighter-black-color);
+}
+
+.map__adress {
+  font-weight: 700;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24px;
+  color: var(--lighter-black-color);
+}
+
+.map__tel-info {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--lighter-black-color);
+}
+
+.map__tel {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--lighter-black-color);
+}
+
+.map__days {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--lighter-black-color);
+}
+
+.map__form-link {
+  background: linear-gradient(180deg, var(--lite-orange-color) 0%, var(--darker-orange-color) 100%);
+  box-shadow: 0 2px 2px var(--rgba-darker-orange-color);
+  border-radius: 70px;
+  border: none;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--white-color);
+
+  text-shadow: 0 2px 5px var(--rgba-darker-red-color);
+}
+
+/* Карта (end) */
+/* --- */
+/* Подвал (start) */
+.footer-ice__items {
+  list-style: none;
+}
+
+.footer-ice__link {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--white-color);
+
+  position: relative;
+}
+
+.footer-ice__link::after {
+  content: " ";
+
+  display: inline-block;
+
+  border-bottom: 1px solid var(--white-color);
+  opacity: 0.2;
+  width: 100%;
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.footer-ice__link-add {
+  font-weight: 700;
+}
+
+.footer-ice__text-author {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--white-color);
+}
+
+/* Подвал (end) */
+/* --- */

@@ -1,149 +1,167 @@
 <!DOCTYPE HTML>
 
-<html lang="ru">
+<html lang="ru" class="slider-one-active">
 
-<head>
+  <head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HTML Academy: Глейси</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500&family=PT+Sans:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet">
+    <title>HTML Academy: Глейси</title>
 
-</head>
+  </head>
 
-<body>
-  <!--  -->
-  <!-- Header (start) -->
-  <header>
-    <a href="index.html">
-      <img src="https://via.placeholder.com/150x100" width="154" height="64" alt="Логотип Глейси">
-    </a>
-    <nav>
-      <ul>
-        <li>
-          <a href="catalog.html">
-            Каталог
-          </a>
-          <ul>
-            <li>
-              <p>
-                Новинки
-              </p>
+  <body>
+    <!--  -->
+    <!-- Header (start) -->
+    <header class="ice-header">
+      <h2 class="visually-hidden" tabindex="-1">Меню навигации сайта</h2>
+      <a href="index.html">
+        <img class="ice-header__logo-img"
+          src="https://via.placeholder.com/150x100" width="154" height="64"
+          alt="Логотип Глейси">
+      </a>
+      <nav class="ice-header__navigation">
+        <ul class="ice-header__inner">
+          <li class="ice-header__item">
+            <a class="ice-header__item-link" href="catalog.html">
+              Каталог
+            </a>
+            <ul class="ice-header__inner-add">
+              <li class="ice-header__item-add">
+                <p class="ice-header__item-add-text">
+                  Новинки
+                </p>
+              </li>
+              <li class="ice-header__item-add">
+                <a class="ice-header__item-link-inner" href="catalog.html">
+                  Сливочное
+                </a>
+              </li>
+              <li class="ice-header__item-add">
+                <a class="ice-header__item-link-inner" href="catalog.html">
+                  Щербеты
+                </a>
+              </li>
+              <li class="ice-header__item-add">
+                <a class="ice-header__item-link-inner" href="catalog.html">
+                  Фруктовый лед
+                </a>
+              </li>
+              <li class="ice-header__item-add">
+                <a class="ice-header__item-link-inner" href="catalog.html">
+                  Мелорин
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="ice-header__item">
+            <a class="ice-header__item-link" href="blank.html">
+              Доставка и оплата
+            </a>
+          </li>
+          <li class="ice-header__item">
+            <a class="ice-header__item-link" href="blank.html">
+              О компании
+            </a>
+          </li>
+        </ul>
+        <div class="ice-header__inner">
+          <ul class="ice-header__inner-wrapper">
+            <li class="ice-header__wrapper-item">
+              <button class="ice-header__wrapper-button" type="button">Поиск</button>
             </li>
-            <li>
-              <a href="catalog.html">
-                Сливочное
-              </a>
+            <li class="ice-header__wrapper-item">
+              <a class="ice-header__wrapper-link" href="#">Вход</a>
             </li>
-            <li>
-              <a href="catalog.html">
-                Щербеты
-              </a>
-            </li>
-            <li>
-              <a href="catalog.html">
-                Фруктовый лед
-              </a>
-            </li>
-            <li>
-              <a href="catalog.html">
-                Мелорин
-              </a>
+            <li class="ice-header__wrapper-item">
+              <button type="button">Пусто</button>
             </li>
           </ul>
-        </li>
-        <li>
-          <a href="blank.html">
-            Доставка и оплата
-          </a>
-        </li>
-        <li>
-          <a href="blank.html">
-            О компании
-          </a>
-        </li>
-      </ul>
-      <div>
-        <ul>
-          <li>
-            <button type="button">Поиск</button>
-          </li>
-          <li>
-            <a href="#">Вход</a>
-          </li>
-          <li>
-            <button type="button">Пусто</button>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <p>
-              с 10 до 20, ежедневно
-            </p>
-          </li>
-          <li>
-            <a href="tel:+88124502525">8 812 450-25-25</a>
-          </li>
-        </ul>
+          <ul class="ice-header__inner-wrapper">
+            <li class="ice-header__wrapper-item">
+              <p class="ice-header__wrapper-days">
+                с 10 до 20, ежедневно
+              </p>
+            </li>
+            <li class="ice-header__wrapper-item">
+              <a class="ice-header__wrapper-tel" href="tel:+88124502525">8 812
+                450-25-25</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- Header (end) -->
+    <!--  -->
+    <main class="main-content">
+      <h1 class="visually-hidden" tabindex="-1">Пустая страница-заглушка.</h1>
+      <h2 class="main-content__empty-page">
+        Это пустая страница-заглушка.
+      </h2>
+    </main>
+    <!--  -->
+    <!-- Подвал (start) -->
+    <footer class="footer-ice">
+      <h2 class="visually-hidden" tabindex="-1">Наши контакты и документы</h2>
+      <div class="footer-ice__wrapper">
+        <a class="footer-ice__link" href="#">
+          <span class="visually-hidden">Мы ВКонтакте</span>
+          <img src="https://via.placeholder.com/150x100" width="32" height="32"
+            alt="ВКонтакте">
+        </a>
+        <a class="footer-ice__link" href="#">
+          <span class="visually-hidden">Мы в Twitter</span>
+          <img src="https://via.placeholder.com/150x100" width="32" height="32"
+            alt="Twitter">
+        </a>
       </div>
-    </nav>
-  </header>
-  <!-- Header (end) -->
-  <!--  -->
-  <main>
-    <h1>
-      Это пустая страница-заглушка.
-    </h1>
-  </main>
-  <!--  -->
-  <!-- Подвал (start) -->
-  <footer>
-    <h2>Наши контакты и документы</h2>
-    <div>
-      <a href="#">
-        <span>Мы ВКонтакте</span>
-        <img src="https://via.placeholder.com/150x100" width="32" height="32" alt="ВКонтакте">
-      </a>
-      <a href="#">
-        <span>Мы в Twitter</span>
-        <img src="https://via.placeholder.com/150x100" width="32" height="32" alt="Twitter">
-      </a>
-    </div>
-    <nav>
-      <ul>
-        <li>
-          <a href="#">
-            <img src="https://via.placeholder.com/150x100" width="15" height="13" alt="Сердечко">
-            Для поставщиков
-          </a>
-        </li>
-        <li>
-          <a href="blank.html">
-            Наши документы
-          </a>
-        </li>
-        <li>
-          <a href="blank.html">
-            О производстве
-          </a>
-        </li>
-        <li>
-          <a href="blank.html">
-            Экологические стандарты
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <div>
-      <a href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="https://via.placeholder.com/150x100" width="106" height="39" alt="Copyright Html Academy">
-      </a>
-      <p>
-        Сделано в HTML Academy © 2019
-      </p>
-    </div>
-  </footer>
-  <!-- Подвал (end)  -->
-  <!--  -->
-</body>
+      <nav class="footer-ice__wrapper footer-ice__navigation">
+        <ul class="footer-ice__items">
+          <li class="footer-ice__item">
+            <a class="footer-ice__link" href="#">
+              <img src="https://via.placeholder.com/150x100" width="15"
+                height="13" alt="Сердечко">
+              Для поставщиков
+            </a>
+          </li>
+          <li class="footer-ice__item">
+            <a class="footer-ice__link" href="blank.html">
+              Наши документы
+            </a>
+          </li>
+          <li class="footer-ice__item">
+            <a class="footer-ice__link" href="blank.html">
+              О производстве
+            </a>
+          </li>
+          <li class="footer-ice__item">
+            <a class="footer-ice__link" href="blank.html">
+              Экологические стандарты
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer-ice__wrapper">
+        <a class="footer-ice__link-author"
+          href="https://htmlacademy.ru/intensive/htmlcss">
+          <img class="footer-ice__logo-author"
+            src="https://via.placeholder.com/150x100" width="106" height="39"
+            alt="Copyright Html Academy">
+        </a>
+        <p class="footer-ice__text-author">
+          Сделано в HTML Academy © 2019
+        </p>
+      </div>
+    </footer>
+    <!-- Подвал (end)  -->
+    <!--  -->
+  </body>
 
 </html>
