@@ -25,7 +25,6 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
   /* Браузер сначала попробует найти шрифт локально */
   src: local("RobotoBold"), url("../fonts/Roboto-Bold.ttf") format("ttf");
   src: local("RobotoLight"), url("../fonts/Roboto-Light.ttf") format("ttf");
@@ -282,6 +281,10 @@ a {
 
 .main-content__paginator-link-arrow {
   color: var(--rgba-lighter-black-color);
+}
+
+.main-content__paginator-arrow-img-next {
+  transform: scaleX(-1);
 }
 
 .main-content__paginator-link-active {
