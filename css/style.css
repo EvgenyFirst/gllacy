@@ -46,37 +46,36 @@ html {
 
   height: 100%;
 
+  margin: 0 auto;
+
   margin-right: calc(-1 * (100vw - 100%));
 
   overflow-x: hidden;
   /* padding: 0 calc(20px - (100vw - 100%)) 0 0; */
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
   /* background-image: url("/Index.jpg");
   background-position-x: center;
   background-repeat: no-repeat;
   opacity: 0.5;
-
   background-image:url("/catalog.jpg"); background-position-x:center; background-repeat:no-repeat; opacity:0.5;
   background-image:url("/popup.jpg"); background-position-x:center; background-repeat:no-repeat; opacity:0.5;}
-
   body {width:1200px; min-width:320px; height:auto;
   position:relative;
   padding:0 calc(17px - (100vw - 100%)) 0 0;/* margin-right: calc(-1 * (100vw - 100%)); */
-  position: relative;
 }
 
 body {
-  position: absolute;
-  top: 0; bottom: 0; left: 0; right: 0;
   width: 100%;
   max-width: 1200px;
   min-height: 100%;
 
   display: grid;
   grid-template-rows: min-content 1fr min-content;
-
-  margin-right: auto;
-  margin-left: auto;
 }
 
 img {
@@ -107,7 +106,7 @@ a {
 
 /* Header (start) */
 .ice-header {
-  max-width: 1200px;
+  width: 1200px;
 
   display: grid;
   grid-template-columns: 200px 1fr;
