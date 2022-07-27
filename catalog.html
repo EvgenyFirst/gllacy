@@ -28,16 +28,13 @@
           alt="Логотип Глейси">
       </a>
       <nav class="ice-header__navigation">
-        <ul class="ice-header__inner">
+        <ul class="ice-header__inner ice-header__inner-special">
           <li class="ice-header__item">
-            <a class="ice-header__item-link" href="catalog.html">
-              Каталог
-            </a>
+            <a class="ice-header__item-link ice-header__item-link-add"
+              href="catalog.html">Каталог</a>
             <ul class="ice-header__inner-add">
               <li class="ice-header__item-add">
-                <p class="ice-header__item-add-text">
-                  Новинки
-                </p>
+                <p class="ice-header__item-add-text">Новинки</p>
               </li>
               <li class="ice-header__item-add">
                 <a class="ice-header__item-link-inner" href="catalog.html">
@@ -67,28 +64,29 @@
             </a>
           </li>
           <li class="ice-header__item">
-            <a class="ice-header__item-link" href="blank.html">
-              О компании
-            </a>
+            <a class="ice-header__item-link" href="blank.html"> О компании </a>
           </li>
         </ul>
         <div class="ice-header__inner">
-          <ul class="ice-header__inner-wrapper">
+          <ul class="ice-header__inner-wrapper ice-header__inner-wrapper-nav">
             <li class="ice-header__wrapper-item">
-              <button class="ice-header__wrapper-button" type="button">Поиск</button>
+              <a class="ice-header__wrapper-link" href="#">
+                Поиск
+              </a>
             </li>
             <li class="ice-header__wrapper-item">
               <a class="ice-header__wrapper-link" href="#">Вход</a>
             </li>
             <li class="ice-header__wrapper-item">
-              <button type="button">2 товара</button>
+              <a class="ice-header__wrapper-link" href="#">
+                <span>2</span> товара
+              </a>
             </li>
           </ul>
-          <ul class="ice-header__inner-wrapper">
+          <ul class="ice-header__inner-wrapper
+            ice-header__inner-wrapper-adress">
             <li class="ice-header__wrapper-item">
-              <p class="ice-header__wrapper-days">
-                с 10 до 20, ежедневно
-              </p>
+              <p class="ice-header__wrapper-days">с 10 до 20, ежедневно</p>
             </li>
             <li class="ice-header__wrapper-item">
               <a class="ice-header__wrapper-tel" href="tel:+88124502525">8 812
@@ -136,7 +134,7 @@
       <!-- Мороженое(start) -->
       <section class="main-content__ice-catalog">
         <h2 class="visually-hidden" tabindex="-1">Мороженое</h2>
-        <div class="main-content__option-group">
+        <div class="main-content__option-group main-content__option-group-add">
           <ul class="main-content__group-ice">
             <!-- Мороженое 1 (start) -->
             <li class="main-content__ice-item">
@@ -340,7 +338,9 @@
               <li class="main-content__paginator-item">
                 <a class="main-content__paginator-link
                   main-content__paginator-link-arrow" href="#">
-                  <img class="main-content__paginator-arrow-img main-content__paginator-arrow-img-back" src="img/paginator-arrow.svg" width="7"
+                  <img class="main-content__paginator-arrow-img
+                    main-content__paginator-arrow-img-back"
+                    src="img/paginator-arrow.svg" width="7"
                     height="12"
                     alt="Назад">
                 </a>
@@ -374,7 +374,9 @@
               <li class="main-content__paginator-item">
                 <a class="main-content__paginator-link
                   main-content__paginator-link-arrow" href="#">
-                  <img class="main-content__paginator-arrow-img main-content__paginator-arrow-img-next" src="img/paginator-arrow.svg" width="7"
+                  <img class="main-content__paginator-arrow-img
+                    main-content__paginator-arrow-img-next"
+                    src="img/paginator-arrow.svg" width="7"
                     height="12"
                     alt="Вперед">
                 </a>
@@ -389,36 +391,46 @@
     <!-- Подвал (start) -->
     <footer class="footer-ice">
       <h2 class="visually-hidden" tabindex="-1">Наши контакты и документы</h2>
-      <div class="footer-ice__wrapper">
+      <div class="footer-ice__group">
         <a class="footer-ice__link" href="#">
           <span class="visually-hidden">Мы ВКонтакте</span>
-          <img src="img/social-vk-ico.svg" width="32" height="32"
-            alt="ВКонтакте">
+          <img
+            src="img/social-vk-ico.svg"
+            width="32"
+            height="32"
+            alt="ВКонтакте"
+            />
         </a>
         <a class="footer-ice__link" href="#">
           <span class="visually-hidden">Мы в Twitter</span>
-          <img src="img/social-twitter-ico.svg" width="32" height="32"
-            alt="Twitter">
+          <img
+            src="img/social-twitter-ico.svg"
+            width="32"
+            height="32"
+            alt="Twitter"
+            />
         </a>
       </div>
-      <nav class="footer-ice__wrapper footer-ice__navigation">
+      <nav class="footer-ice__navigation">
         <ul class="footer-ice__items">
           <li class="footer-ice__item">
             <a class="footer-ice__link footer-ice__link-add" href="blank.html">
-              <img src="img/heart-ico.svg" width="15"
-                height="13" alt="Сердечко">
+              <img
+                src="img/heart-ico.svg"
+                width="15"
+                height="13"
+                alt="Сердечко"
+                />
               Для поставщиков
             </a>
           </li>
           <li class="footer-ice__item">
-            <a class="footer-ice__link" href="blank.html">
-              Наши документы
-            </a>
+            <a class="footer-ice__link" href="blank.html"> О производстве </a>
           </li>
+        </ul>
+        <ul class="footer-ice__items">
           <li class="footer-ice__item">
-            <a class="footer-ice__link" href="blank.html">
-              О производстве
-            </a>
+            <a class="footer-ice__link" href="blank.html"> Наши документы </a>
           </li>
           <li class="footer-ice__item">
             <a class="footer-ice__link" href="blank.html">
@@ -428,15 +440,18 @@
         </ul>
       </nav>
       <div class="footer-ice__wrapper">
-        <a class="footer-ice__link-author"
+        <a
+          class="footer-ice__link-author"
           href="https://htmlacademy.ru/intensive/htmlcss">
-          <img class="footer-ice__logo-author"
-            src="img/logo-author-of-cources.svg" width="106" height="39"
-            alt="Copyright Html Academy">
+          <img
+            class="footer-ice__logo-author"
+            src="img/logo-author-of-cources.svg"
+            width="106"
+            height="39"
+            alt="Copyright Html Academy"
+            />
         </a>
-        <p class="footer-ice__text-author">
-          Сделано в HTML Academy © 2019
-        </p>
+        <p class="footer-ice__text-author">Сделано в HTML Academy © 2019</p>
       </div>
     </footer>
     <!-- Подвал (end)  -->
