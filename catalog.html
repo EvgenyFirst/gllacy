@@ -22,7 +22,7 @@
     <!-- Header (start) -->
     <header class="ice-header">
       <h2 class="visually-hidden" tabindex="-1">Меню навигации сайта</h2>
-      <a href="index.html">
+      <a class="ice-header__logo-link" href="index.html">
         <img class="ice-header__logo-img"
           src="img/logo.svg" width="154" height="64"
           alt="Логотип Глейси">
@@ -30,33 +30,38 @@
       <nav class="ice-header__navigation">
         <ul class="ice-header__inner ice-header__inner-special">
           <li class="ice-header__item">
-            <a class="ice-header__item-link ice-header__item-link-add"
-              href="catalog.html">Каталог</a>
-            <ul class="ice-header__inner-add">
-              <li class="ice-header__item-add">
-                <p class="ice-header__item-add-text">Новинки</p>
-              </li>
-              <li class="ice-header__item-add">
-                <a class="ice-header__item-link-inner" href="catalog.html">
-                  Сливочное
-                </a>
-              </li>
-              <li class="ice-header__item-add">
-                <a class="ice-header__item-link-inner" href="catalog.html">
-                  Щербеты
-                </a>
-              </li>
-              <li class="ice-header__item-add">
-                <a class="ice-header__item-link-inner" href="catalog.html">
-                  Фруктовый лед
-                </a>
-              </li>
-              <li class="ice-header__item-add">
-                <a class="ice-header__item-link-inner" href="catalog.html">
-                  Мелорин
-                </a>
-              </li>
-            </ul>
+            <a class="ice-header__item-link ice-header__item-link-add
+              ice-header__item-link-active"
+              href="catalog.html">
+              Каталог
+            </a>
+            <div class="ice-header__inner-add-wrapper">
+              <ul class="ice-header__inner-add">
+                <li class="ice-header__item-add">
+                  <p class="ice-header__item-add-text">Новинки</p>
+                </li>
+                <li class="ice-header__item-add">
+                  <a class="ice-header__item-link-inner" href="catalog.html">
+                    Сливочное
+                  </a>
+                </li>
+                <li class="ice-header__item-add">
+                  <a class="ice-header__item-link-inner" href="catalog.html">
+                    Щербеты
+                  </a>
+                </li>
+                <li class="ice-header__item-add">
+                  <a class="ice-header__item-link-inner" href="catalog.html">
+                    Фруктовый лед
+                  </a>
+                </li>
+                <li class="ice-header__item-add">
+                  <a class="ice-header__item-link-inner" href="catalog.html">
+                    Мелорин
+                  </a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="ice-header__item">
             <a class="ice-header__item-link" href="blank.html">
@@ -70,392 +75,686 @@
         <div class="ice-header__inner">
           <ul class="ice-header__inner-wrapper ice-header__inner-wrapper-nav">
             <li class="ice-header__wrapper-item">
-              <a class="ice-header__wrapper-link" href="#">
+              <a class="ice-header__wrapper-link ice-header__wrapper-link-find"
+                href="#">
                 Поиск
-              </a>
-            </li>
-            <li class="ice-header__wrapper-item">
-              <a class="ice-header__wrapper-link" href="#">Вход</a>
-            </li>
-            <li class="ice-header__wrapper-item">
-              <a class="ice-header__wrapper-link" href="#">
-                <span>2</span> товара
-              </a>
-            </li>
-          </ul>
-          <ul class="ice-header__inner-wrapper
-            ice-header__inner-wrapper-adress">
-            <li class="ice-header__wrapper-item">
-              <p class="ice-header__wrapper-days">с 10 до 20, ежедневно</p>
-            </li>
-            <li class="ice-header__wrapper-item">
-              <a class="ice-header__wrapper-tel" href="tel:+88124502525">8 812
-                450-25-25</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <!-- Header (end) -->
-    <!--  -->
-    <main class="main-content">
-      <!-- Заголовок и ссылки (start) -->
-      <div class="main-content__bread-crumbs">
-        <ul class="main-content__bread-crumbs-wrapper">
-          <li class="main-content__bread-crumbs-item">
-            <a class="main-content__bread-crumbs-link
-              main-content__bread-crumbs-link-active" href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="main-content__bread-crumbs-item">
-            <a class="main-content__bread-crumbs-link
-              main-content__bread-crumbs-link-active" href="catalog.html">
-              Каталог
-            </a>
-          </li>
-          <li class="main-content__bread-crumbs-item">
-            <a class="main-content__bread-crumbs-link">
-              Сливочное
-            </a>
-          </li>
-        </ul>
-      </div>
-      <!-- Заголовок и ссылки (end) -->
-      <!--  -->
-      <!-- Фильтр для настроек выбора мороженого (start) -->
-      <section class="main-content__filter-catalog">
-        <h2 class="visually-hidden" tabindex="-1">Фильтр для настроек выбора
-          мороженого</h2>
-        <!--Здест будет фильтр для настроек выбора мороженого -->
-      </section>
-      <!-- Фильтр для настроек выбора мороженого (end) -->
-      <!--  -->
-      <!-- Мороженое(start) -->
-      <section class="main-content__ice-catalog">
-        <h2 class="visually-hidden" tabindex="-1">Мороженое</h2>
-        <div class="main-content__option-group main-content__option-group-add">
-          <ul class="main-content__group-ice">
-            <!-- Мороженое 1 (start) -->
-            <li class="main-content__ice-item">
-              <img class="main-content__ice-img"
-                src="img/catalog-ice-yellow.png" width="267"
-                height="267"
-                alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-              <div class="main-content__ice-price">
-                <p class="main-content__ice-price-text">
-                  310 ₽ <span class="main-content__ice-price-text-span">/кг</span>
-                </p>
-              </div>
-              <h3 class="main-content__ice-price-text-header">
-                Сливочное с апельсиновым джемом и цитрусовой стружкой
-              </h3>
-            </li>
-            <!-- Мороженое 1 (end) -->
-            <!-- Мороженое 2 (start) -->
-            <li class="main-content__ice-item">
-              <img class="main-content__ice-img"
-                src="img/catalog-ice-chocolate.png" width="267"
-                height="267"
-                alt="Сливочно-кофейное с кусочками шоколада">
-              <div class="main-content__ice-price">
-                <p class="main-content__ice-price-text">
-                  380 ₽ <span class="main-content__ice-price-text-span">/кг</span>
-                </p>
-              </div>
-              <h3 class="main-content__ice-price-text-header">
-                Сливочно-кофейное с кусочками шоколада
-              </h3>
-            </li>
-            <!-- Мороженое 2 (end) -->
-            <!-- Мороженое 3 (start) -->
-            <li class="main-content__ice-item">
-              <img class="main-content__ice-img"
-                src="img/catalog-ice-pink.png" width="267"
-                height="267"
-                alt="Сливочно-клубничное с присыпкой из белого шоколада">
-              <div class="main-content__ice-price">
-                <p class="main-content__ice-price-text">
-                  355 ₽ <span class="main-content__ice-price-text-span">/кг</span>
-                </p>
-              </div>
-              <h3 class="main-content__ice-price-text-header">
-                Сливочно-клубничное с присыпкой из белого шоколада
-              </h3>
-            </li>
-            <!-- Мороженое 3 (end) -->
-            <!-- Мороженое 4 (start) -->
-            <li class="main-content__ice-item">
-              <img class="main-content__ice-img"
-                src="img/catalog-ice-beige.png" width="267"
-                height="267"
-                alt="Сливочное крем-брюле с карамельной подливкой">
-              <div class="main-content__ice-price">
-                <p class="main-content__ice-price-text">
-                  415 ₽ <span class="main-content__ice-price-text-span">/кг</span>
-                </p>
-              </div>
-              <h3 class="main-content__ice-price-text-header">
-                Сливочное крем-брюле с карамельной подливкой
-              </h3>
-            </li>
-            <!-- Мороженое 4 (end) -->
-            <!-- Мороженое 5 (start) -->
-            <li class="main-content__ice-item">
-              <img class="main-content__ice-img"
-                src="img/catalog-ice-red.png" width="267"
-                height="267" alt="Сливочное с брусничным
-                джемом">
-              <div class="main-content__ice-price">
-                <p class="main-content__ice-price-text">
-                  325 ₽ <span class="main-content__ice-price-text-span">/кг</span>
-                </p>
-              </div>
-              <h3 class="main-content__ice-price-text-header">
-                Сливочное с брусничным джемом
-              </h3>
-            </li>
-            <!-- Мороженое 5 (end) -->
-            <!-- Мороженое 6 (start) -->
-            <li class="main-content__ice-item">
-              <img class="main-content__ice-img"
-                src="img/catalog-ice-dark-white.png" width="267"
-                height="267"
-                alt="Сливочно-черничное с цельными ягодами черники">
-              <div class="main-content__ice-price">
-                <p class="main-content__ice-price-text">
-                  410 ₽ <span class="main-content__ice-price-text-span">/кг</span>
-                </p>
-              </div>
-              <h3 class="main-content__ice-price-text-header">
-                Сливочно-черничное с цельными ягодами черники
-              </h3>
-            </li>
-            <!-- Мороженое 6 (end) -->
-            <!-- Мороженое 7 (start) -->
-            <li class="main-content__ice-item">
-              <img class="main-content__ice-img"
-                src="img/catalog-ice-yellow-different-color.png" width="267"
-                height="267"
-                alt="Сливочно-лимонное с карамельной присыпкой">
-              <div class="main-content__ice-price">
-                <p class="main-content__ice-price-text">
-                  315 ₽ <span class="main-content__ice-price-text-span">/кг</span>
-                </p>
-              </div>
-              <h3 class="main-content__ice-price-text-header">
-                Сливочно-лимонное с карамельной присыпкой
-              </h3>
-            </li>
-            <!-- Мороженое 7 (end) -->
-            <!-- Мороженое 8 (start) -->
-            <li class="main-content__ice-item">
-              <img class="main-content__ice-img"
-                src="img/catalog-ice-chocolate-white.png" width="267"
-                height="267"
-                alt="Сливочное с шоколадной стружкой">
-              <div class="main-content__ice-price">
-                <p class="main-content__ice-price-text">
-                  320 ₽ <span class="main-content__ice-price-text-span">/кг</span>
-                </p>
-              </div>
-              <h3 class="main-content__ice-price-text-header">
-                Сливочное с шоколадной стружкой
-              </h3>
-            </li>
-            <!-- Мороженое 8 (end) -->
-            <!-- Мороженое 9 (start) -->
-            <li class="main-content__ice-item">
-              <img class="main-content__ice-img"
-                src="img/catalog-ice-vanila-chocolate.png" width="267"
-                height="267"
-                alt="Сливочно-ванильное с кусочками шоколада">
-              <div class="main-content__ice-price">
-                <p class="main-content__ice-price-text">
-                  440 ₽ <span class="main-content__ice-price-text-span">/кг</span>
-                </p>
-              </div>
-              <h3 class="main-content__ice-price-text-header">
-                Сливочно-ванильное с кусочками шоколада
-              </h3>
-            </li>
-            <!-- Мороженое 9 (end) -->
-            <!-- Мороженое 10 (start) -->
-            <li class="main-content__ice-item">
-              <img class="main-content__ice-img"
-                src="img/catalog-ice-menthol.png" width="267"
-                height="267"
-                alt="Сливочноe с ментоловым сиропом">
-              <div class="main-content__ice-price">
-                <p class="main-content__ice-price-text">
-                  435 ₽ <span class="main-content__ice-price-text-span">/кг</span>
-                </p>
-              </div>
-              <h3 class="main-content__ice-price-text-header">
-                Сливочноe с ментоловым сиропом
-              </h3>
-            </li>
-            <!-- Мороженое 10 (end) -->
-            <!-- Мороженое 11 (start) -->
-            <li class="main-content__ice-item">
-              <img class="main-content__ice-img"
-                src="img/catalog-ice-part-chocolate.png" width="267"
-                height="267"
-                alt="Сливочное с кусочками черного шоколада">
-              <div class="main-content__ice-price">
-                <p class="main-content__ice-price-text">
-                  355 ₽ <span class="main-content__ice-price-text-span">/кг</span>
-                </p>
-              </div>
-              <h3 class="main-content__ice-price-text-header">
-                Сливочное с кусочками черного шоколада
-              </h3>
-            </li>
-            <!-- Мороженое 11 (end) -->
-            <!-- Мороженое 12 (start) -->
-            <li class="main-content__ice-item">
-              <img class="main-content__ice-img"
-                src="img/catalog-ice-mint.png" width="267"
-                height="267"
-                alt="Сливочное с мятным сиропом">
-              <div class="main-content__ice-price">
-                <p class="main-content__ice-price-text">
-                  420 ₽ <span class="main-content__ice-price-text-span">/кг</span>
-                </p>
-              </div>
-              <h3 class="main-content__ice-price-text-header">
-                Сливочное с мятным сиропом
-              </h3>
-            </li>
-            <!-- Мороженое 12 (end) -->
-          </ul>
-          <div class="main-content__paginator">
-            <p class="visually-hidden" tabindex="-1">
-              Переключатель страниц в каталоге. Сейчас Вы находитесь на первой
-              странице каталога.
-            </p>
-            <ul class="main-content__paginator-wrapper">
-              <li class="main-content__paginator-item">
-                <a class="main-content__paginator-link
-                  main-content__paginator-link-arrow" href="#">
-                  <img class="main-content__paginator-arrow-img
-                    main-content__paginator-arrow-img-back"
-                    src="img/paginator-arrow.svg" width="7"
-                    height="12"
-                    alt="Назад">
+                <svg class="ice-header__link-find-img" width="16" height="16"
+                  viewBox="0 0 16 16" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 14.6652L11.0785 9.73294C11.9827 8.48188 12.3826
+                    6.93501 12.1984 5.40134C12.0141 3.86767 11.2594 2.4601
+                    10.0848 1.45982C8.91022 0.45954 7.40233 -0.0598191 5.86234
+                    0.00548954C4.32234 0.0707982 2.86363 0.715967 1.77757
+                    1.81212C0.691516 2.90827 0.0580813 4.3747 0.0038002
+                    5.91849C-0.050481 7.46228 0.478388 8.96976 1.48476
+                    10.1398C2.49113 11.3098 3.90092 12.0563 5.43251
+                    12.2301C6.96409 12.4039 8.50472 11.9922 9.74663
+                    11.0772L14.6586 16L16 14.6652ZM6.08152 10.3767C5.24079
+                    10.3767 4.41895 10.1268 3.71991 9.65874C3.02087 9.19063
+                    2.47604 8.5253 2.15431 7.74687C1.83258 6.96844 1.7484
+                    6.11188 1.91241 5.28551C2.07643 4.45913 2.48128 3.70006
+                    3.07576 3.10427C3.67024 2.50849 4.42766 2.10276 5.25223
+                    1.93838C6.0768 1.77401 6.93149 1.85837 7.70822
+                    2.1808C8.48495 2.50324 9.14883 3.04927 9.61591
+                    3.74983C10.083 4.4504 10.3323 5.27404 10.3323
+                    6.11661C10.3298 7.24568 9.88115 8.3278 9.08451
+                    9.12618C8.28788 9.92456 7.20813 10.3742 6.08152 10.3767Z"
+                    fill="white"/>
+                  </svg>
                 </a>
+                <!-- Форма поиска (start) -->
+                <div class="ice-header__form-search
+                  ice-header__form-search-hidden">
+                  <p class="visually-hidden" tabindex="-1">Форма поиска</p>
+                  <form action="/" class="ice-header__wrapper-form-search">
+                    <input class="ice-header__input-search" type="search"
+                      placeholder="Крем-брюле">
+                  </form>
+                </div>
+                <!-- Форма поиска (end) -->
               </li>
-              <li class="main-content__paginator-item">
-                <a class="main-content__paginator-link
-                  main-content__paginator-link-active">
-                  1
-                </a>
-              </li>
-              <li class="main-content__paginator-item">
-                <a class="main-content__paginator-link" href="#">
-                  2
-                </a>
-              </li>
-              <li class="main-content__paginator-item">
-                <a class="main-content__paginator-link" href="#">
-                  3
-                </a>
-              </li>
-              <li class="main-content__paginator-item">
-                <a class="main-content__paginator-link" href="#">
-                  4
-                </a>
-              </li>
-              <li class="main-content__paginator-item">
-                <a class="main-content__paginator-link" href="#">
-                  5
-                </a>
-              </li>
-              <li class="main-content__paginator-item">
-                <a class="main-content__paginator-link
-                  main-content__paginator-link-arrow" href="#">
-                  <img class="main-content__paginator-arrow-img
-                    main-content__paginator-arrow-img-next"
-                    src="img/paginator-arrow.svg" width="7"
-                    height="12"
-                    alt="Вперед">
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <!-- Мороженое (end) -->
-    </main>
-    <!--  -->
-    <!-- Подвал (start) -->
-    <footer class="footer-ice">
-      <h2 class="visually-hidden" tabindex="-1">Наши контакты и документы</h2>
-      <div class="footer-ice__group">
-        <a class="footer-ice__link" href="#">
-          <span class="visually-hidden">Мы ВКонтакте</span>
-          <img
-            src="img/social-vk-ico.svg"
-            width="32"
-            height="32"
-            alt="ВКонтакте"
-            />
-        </a>
-        <a class="footer-ice__link" href="#">
-          <span class="visually-hidden">Мы в Twitter</span>
-          <img
-            src="img/social-twitter-ico.svg"
-            width="32"
-            height="32"
-            alt="Twitter"
-            />
-        </a>
-      </div>
-      <nav class="footer-ice__navigation">
-        <ul class="footer-ice__items">
-          <li class="footer-ice__item">
-            <a class="footer-ice__link footer-ice__link-add" href="blank.html">
-              <img
-                src="img/heart-ico.svg"
-                width="15"
-                height="13"
-                alt="Сердечко"
-                />
-              Для поставщиков
-            </a>
-          </li>
-          <li class="footer-ice__item">
-            <a class="footer-ice__link" href="blank.html"> О производстве </a>
-          </li>
-        </ul>
-        <ul class="footer-ice__items">
-          <li class="footer-ice__item">
-            <a class="footer-ice__link" href="blank.html"> Наши документы </a>
-          </li>
-          <li class="footer-ice__item">
-            <a class="footer-ice__link" href="blank.html">
-              Экологические стандарты
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div class="footer-ice__wrapper">
-        <a
-          class="footer-ice__link-author"
-          href="https://htmlacademy.ru/intensive/htmlcss">
-          <img
-            class="footer-ice__logo-author"
-            src="img/logo-author-of-cources.svg"
-            width="106"
-            height="39"
-            alt="Copyright Html Academy"
-            />
-        </a>
-        <p class="footer-ice__text-author">Сделано в HTML Academy © 2019</p>
-      </div>
-    </footer>
-    <!-- Подвал (end)  -->
-    <!--  -->
-  </body>
+              <li class="ice-header__wrapper-item">
+                <a class="ice-header__wrapper-link
+                  ice-header__wrapper-link-log-in" href="#">
+                  <svg class="ice-header__link-log-in-img" width="20"
+                    height="19" viewBox="0 0 20 19" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.04 14.88L12.96 9.5L6.04
+                      4.13V7.04H0V11.96H6.04V14.88Z" fill="white"/>
+                      <path d="M18 0H5C4.46957 0 3.96086 0.210714 3.58579
+                        0.585786C3.21071 0.960859 3 1.46957 3
+                        2V4H5V2H18V17H5V15H3V17C3 17.5304 3.21071 18.0391
+                        3.58579 18.4142C3.96086 18.7893 4.46957 19 5
+                        19H18C18.5304 19 19.0391 18.7893 19.4142 18.4142C19.7893
+                        18.0391 20 17.5304 20 17V2C20 1.46957 19.7893 0.960859
+                        19.4142 0.585786C19.0391 0.210714 18.5304 0 18 0Z"
+                        fill="white"/>
+                      </svg>
+                      Вход
+                    </a>
+                    <!-- Форма входа\регистрации\восстановления пароля (start) -->
+                    <div class="ice-header__form-log-in
+                      ice-header__form-log-in-hidden">
+                      <p class="visually-hidden" tabindex="-1">Форма
+                        входа\регистрации\восстановления пароля</p>
+                      <form action="/" class="ice-header__wrapper-form-log-in">
+                        <div class="ice-header__form-inner">
+                          <input class="ice-header__form-email" type="email"
+                            placeholder="email@example.com">
+                          <input class="ice-header__form-password"
+                            type="password"
+                            placeholder="......">
+                        </div>
+                        <div class="ice-header__form-inner
+                          ice-header__form-inner-add">
+                          <button class="ice-header__button-log-in">
+                            Войти
+                          </button>
+                          <div class="ice-header__form-container-questions">
+                            <a href="blank.html"
+                              class="ice-header__form-question">
+                              Забыли пароль?
+                            </a>
+                            <a href="blank.html"
+                              class="ice-header__form-registration">
+                              Новая регистрация
+                            </a>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <!-- Форма входа\регистрации\восстановления пароля (end) -->
+                  </li>
+                  <li class="ice-header__wrapper-item
+                    ice-header__wrapper-item-catalog">
+                    <a class="ice-header__wrapper-link
+                      ice-header__wrapper-link-basket
+                      ice-header__wrapper-link-basket-catalog" href="#">
+                      <svg class="ice-header__link-basket-img" width="21"
+                        height="20" viewBox="0 0 21 20"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.03359 20C8.14664 20 9.04894 19.1046 9.04894
+                          18C9.04894 16.8954 8.14664 16 7.03359 16C5.92054 16
+                          5.01823 16.8954 5.01823 18C5.01823 19.1046 5.92054 20
+                          7.03359 20Z" fill="#343434"/>
+                          <path d="M16.1027 20C17.2157 20 18.118 19.1046 18.118
+                            18C18.118 16.8954 17.2157 16 16.1027 16C14.9896 16
+                            14.0873 16.8954 14.0873 18C14.0873 19.1046 14.9896
+                            20 16.1027 20Z" fill="#343434"/>
+                            <path d="M5.70345 2L5.46161 0H0V2H3.66795L5.17946
+                              15H19.2869L21 2H5.70345ZM17.5034
+                              13H6.97313L5.96545 4H18.6924L17.5034 13Z"
+                              fill="#343434"/>
+                              <path d="M5.93506 4.02997L6.97297
+                                13H17.5032L18.6923 4.02997H5.93506Z"
+                                fill="#E84D37"/>
+                              </svg>
+                              <span>2</span>&nbsp;товара
+                            </a>
+                            <!-- Корзина (start) -->
+                            <div class="ice-header__wrapper-basket
+                              ice-header__wrapper-basket-container-hidden">
+                              <div class="ice-header__wrapper-basket-container">
+                                <div
+                                  class="ice-header__wrapper-basket-purchases">
+                                  <div
+                                    class="ice-header__wrapper-basket-purchase">
+                                    <button type="button"
+                                      class="ice-header__purchase-del">
+                                      <img class="ice-header__purchase-del-img"
+                                        src="/img/cloce-ico.svg" width="11"
+                                        height="11"
+                                        alt="Удалить
+                                        позицию"></button>
+                                    <img class="ice-header__purchase-img"
+                                      src="/img/catalog-ice-yellow-mini.png"
+                                      width="33"
+                                      height="33" alt="Пломбир с
+                                      апельсиновым джемом">
+                                    <p class="ice-header__purchase-name">Пломбир
+                                      с
+                                      апельсиновым джемом</p>
+                                    <p class="ice-header__purchase-price"><span
+                                        class="ice-header__purchase-price-add">1,5
+                                        кг</span>
+                                      х <span
+                                        class="ice-header__purchase-price-add-add">200
+                                        руб.</span></p>
+                                    <p class="ice-header__purchase-price-total">300
+                                      руб.</p>
+                                  </div>
+                                  <div
+                                    class="ice-header__wrapper-basket-purchase">
+                                    <button type="button"
+                                      class="ice-header__purchase-del">
+                                      <img class="ice-header__purchase-del-img"
+                                        src="/img/cloce-ico.svg" width="11"
+                                        height="11"
+                                        alt="Удалить
+                                        позицию"></button>
+                                    <img class="ice-header__purchase-img"
+                                      src="/img/catalog-ice-pink-mini.png"
+                                      width="33"
+                                      height="33" alt="Клубничный пломбир с
+                                      присыпкой из
+                                      белого шоколада">
+                                    <p class="ice-header__purchase-name">Клубничный
+                                      пломбир
+                                      с
+                                      присыпкой<br> из белого шоколада</p>
+                                    <p class="ice-header__purchase-price"><span
+                                        class="ice-header__purchase-price-add">1,5
+                                        кг</span>
+                                      х <span
+                                        class="ice-header__purchase-price-add-add">200
+                                        руб.</span></p>
+                                    <p class="ice-header__purchase-price-total">450
+                                      руб.</p>
+                                  </div>
+                                </div>
+                                <div class="ice-header__wrapper-basket-purchases
+                                  ice-header__wrapper-basket-purchases-total">
+                                  <div class="ice-header__inner-purchases">
+                                    <p
+                                      class="ice-header__inner-purchases-total-price">Итого:
+                                      750
+                                      руб.</p>
+                                  </div>
+                                  <a class="ice-header__inner-purchases-button"
+                                    href="blank.html">
+                                    Оформить заказ
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Корзина (end) -->
+                          </li>
+                        </ul>
+                        <ul class="ice-header__inner-wrapper
+                          ice-header__inner-wrapper-adress">
+                          <li class="ice-header__wrapper-item">
+                            <p class="ice-header__wrapper-days">с 10 до 20,
+                              ежедневно</p>
+                          </li>
+                          <li class="ice-header__wrapper-item">
+                            <a class="ice-header__wrapper-tel"
+                              href="tel:+88124502525">8
+                              812
+                              450-25-25</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </nav>
+                  </header>
+                  <!-- Header (end) -->
+                  <!--  -->
+                  <main class="main-content">
+                    <!-- Заголовок и ссылки (start) -->
+                    <div class="main-content__bread-crumbs">
+                      <ul class="main-content__bread-crumbs-wrapper">
+                        <li class="main-content__bread-crumbs-item">
+                          <a class="main-content__bread-crumbs-link
+                            main-content__bread-crumbs-link-active"
+                            href="index.html">
+                            Главная
+                          </a>
+                        </li>
+                        <li class="main-content__bread-crumbs-item">
+                          <a class="main-content__bread-crumbs-link
+                            main-content__bread-crumbs-link-active"
+                            href="catalog.html">
+                            Каталог
+                          </a>
+                        </li>
+                        <li class="main-content__bread-crumbs-item">
+                          <a class="main-content__bread-crumbs-link main-content__bread-crumbs-link-add">
+                            Сливочное
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- Заголовок и ссылки (end) -->
+                    <!--  -->
+                    <!-- Фильтр для настроек выбора мороженого (start) -->
+                    <section class="main-content__filter-catalog">
+                      <h2 class="visually-hidden" tabindex="-1">Фильтр для
+                        настроек
+                        выбора
+                        мороженого</h2>
+                      <!--Здест будет фильтр для настроек выбора мороженого -->
+                    </section>
+                    <!-- Фильтр для настроек выбора мороженого (end) -->
+                    <!--  -->
+                    <!-- Мороженое(start) -->
+                    <section class="main-content__ice-catalog">
+                      <h2 class="visually-hidden" tabindex="-1">Мороженое</h2>
+                      <div class="main-content__option-group
+                        main-content__option-group-add">
+                        <ul class="main-content__group-ice">
+                          <!-- Мороженое 1 (start) -->
+                          <li class="main-content__ice-item">
+                            <img class="main-content__ice-img"
+                              src="img/catalog-ice-yellow.png" width="267"
+                              height="267"
+                              alt="Сливочное с апельсиновым джемом и цитрусовой
+                              стружкой">
+                            <div class="main-content__ice-price">
+                              <p class="main-content__ice-price-text">
+                                310 ₽ <span
+                                  class="main-content__ice-price-text-span">/кг</span>
+                              </p>
+                            </div>
+                            <h3 class="main-content__ice-price-text-header">
+                              Сливочное с апельсиновым джемом и цитрусовой
+                              стружкой
+                            </h3>
+                            <div class="main-content__ice-item-hover">
+                              <a class="main-content__ice-item-hover-btn"
+                                href="#">
+                                Быстрый просмотр
+                              </a>
+                            </div>
+                          </li>
+                          <!-- Мороженое 1 (end) -->
+                          <!-- Мороженое 2 (start) -->
+                          <li class="main-content__ice-item">
+                            <img class="main-content__ice-img"
+                              src="img/catalog-ice-chocolate.png" width="267"
+                              height="267"
+                              alt="Сливочно-кофейное с кусочками шоколада">
+                            <div class="main-content__ice-price">
+                              <p class="main-content__ice-price-text">
+                                380 ₽ <span
+                                  class="main-content__ice-price-text-span">/кг</span>
+                              </p>
+                            </div>
+                            <h3 class="main-content__ice-price-text-header">
+                              Сливочно-кофейное с кусочками шоколада
+                            </h3>
+                            <div class="main-content__ice-item-hover">
+                              <a class="main-content__ice-item-hover-btn"
+                                href="#">
+                                Быстрый просмотр
+                              </a>
+                            </div>
+                          </li>
+                          <!-- Мороженое 2 (end) -->
+                          <!-- Мороженое 3 (start) -->
+                          <li class="main-content__ice-item">
+                            <img class="main-content__ice-img"
+                              src="img/catalog-ice-pink.png" width="267"
+                              height="267"
+                              alt="Сливочно-клубничное с присыпкой из белого
+                              шоколада">
+                            <div class="main-content__ice-price">
+                              <p class="main-content__ice-price-text">
+                                355 ₽ <span
+                                  class="main-content__ice-price-text-span">/кг</span>
+                              </p>
+                            </div>
+                            <h3 class="main-content__ice-price-text-header">
+                              Сливочно-клубничное с присыпкой из белого шоколада
+                            </h3>
+                            <div class="main-content__ice-item-hover">
+                              <a class="main-content__ice-item-hover-btn"
+                                href="#">
+                                Быстрый просмотр
+                              </a>
+                            </div>
+                          </li>
+                          <!-- Мороженое 3 (end) -->
+                          <!-- Мороженое 4 (start) -->
+                          <li class="main-content__ice-item">
+                            <img class="main-content__ice-img"
+                              src="img/catalog-ice-beige.png" width="267"
+                              height="267"
+                              alt="Сливочное крем-брюле с карамельной
+                              подливкой">
+                            <div class="main-content__ice-price">
+                              <p class="main-content__ice-price-text">
+                                415 ₽ <span
+                                  class="main-content__ice-price-text-span">/кг</span>
+                              </p>
+                            </div>
+                            <h3 class="main-content__ice-price-text-header">
+                              Сливочное крем-брюле с карамельной подливкой
+                            </h3>
+                            <div class="main-content__ice-item-hover">
+                              <a class="main-content__ice-item-hover-btn"
+                                href="#">
+                                Быстрый просмотр
+                              </a>
+                            </div>
+                          </li>
+                          <!-- Мороженое 4 (end) -->
+                          <!-- Мороженое 5 (start) -->
+                          <li class="main-content__ice-item">
+                            <img class="main-content__ice-img"
+                              src="img/catalog-ice-red.png" width="267"
+                              height="267" alt="Сливочное с брусничным
+                              джемом">
+                            <div class="main-content__ice-price">
+                              <p class="main-content__ice-price-text">
+                                325 ₽ <span
+                                  class="main-content__ice-price-text-span">/кг</span>
+                              </p>
+                            </div>
+                            <h3 class="main-content__ice-price-text-header">
+                              Сливочное с брусничным джемом
+                            </h3>
+                            <div class="main-content__ice-item-hover">
+                              <a class="main-content__ice-item-hover-btn"
+                                href="#">
+                                Быстрый просмотр
+                              </a>
+                            </div>
+                          </li>
+                          <!-- Мороженое 5 (end) -->
+                          <!-- Мороженое 6 (start) -->
+                          <li class="main-content__ice-item">
+                            <img class="main-content__ice-img"
+                              src="img/catalog-ice-dark-white.png" width="267"
+                              height="267"
+                              alt="Сливочно-черничное с цельными ягодами
+                              черники">
+                            <div class="main-content__ice-price">
+                              <p class="main-content__ice-price-text">
+                                410 ₽ <span
+                                  class="main-content__ice-price-text-span">/кг</span>
+                              </p>
+                            </div>
+                            <h3 class="main-content__ice-price-text-header">
+                              Сливочно-черничное с цельными ягодами черники
+                            </h3>
+                            <div class="main-content__ice-item-hover">
+                              <a class="main-content__ice-item-hover-btn"
+                                href="#">
+                                Быстрый просмотр
+                              </a>
+                            </div>
+                          </li>
+                          <!-- Мороженое 6 (end) -->
+                          <!-- Мороженое 7 (start) -->
+                          <li class="main-content__ice-item">
+                            <img class="main-content__ice-img"
+                              src="img/catalog-ice-yellow-different-color.png"
+                              width="267"
+                              height="267"
+                              alt="Сливочно-лимонное с карамельной присыпкой">
+                            <div class="main-content__ice-price">
+                              <p class="main-content__ice-price-text">
+                                315 ₽ <span
+                                  class="main-content__ice-price-text-span">/кг</span>
+                              </p>
+                            </div>
+                            <h3 class="main-content__ice-price-text-header">
+                              Сливочно-лимонное с карамельной присыпкой
+                            </h3>
+                            <div class="main-content__ice-item-hover">
+                              <a class="main-content__ice-item-hover-btn"
+                                href="#">
+                                Быстрый просмотр
+                              </a>
+                            </div>
+                          </li>
+                          <!-- Мороженое 7 (end) -->
+                          <!-- Мороженое 8 (start) -->
+                          <li class="main-content__ice-item">
+                            <img class="main-content__ice-img"
+                              src="img/catalog-ice-chocolate-white.png"
+                              width="267"
+                              height="267"
+                              alt="Сливочное с шоколадной стружкой">
+                            <div class="main-content__ice-price">
+                              <p class="main-content__ice-price-text">
+                                320 ₽ <span
+                                  class="main-content__ice-price-text-span">/кг</span>
+                              </p>
+                            </div>
+                            <h3 class="main-content__ice-price-text-header">
+                              Сливочное с шоколадной стружкой
+                            </h3>
+                            <div class="main-content__ice-item-hover">
+                              <a class="main-content__ice-item-hover-btn"
+                                href="#">
+                                Быстрый просмотр
+                              </a>
+                            </div>
+                          </li>
+                          <!-- Мороженое 8 (end) -->
+                          <!-- Мороженое 9 (start) -->
+                          <li class="main-content__ice-item">
+                            <img class="main-content__ice-img"
+                              src="img/catalog-ice-vanila-chocolate.png"
+                              width="267"
+                              height="267"
+                              alt="Сливочно-ванильное с кусочками шоколада">
+                            <div class="main-content__ice-price">
+                              <p class="main-content__ice-price-text">
+                                440 ₽ <span
+                                  class="main-content__ice-price-text-span">/кг</span>
+                              </p>
+                            </div>
+                            <h3 class="main-content__ice-price-text-header">
+                              Сливочно-ванильное с кусочками шоколада
+                            </h3>
+                            <div class="main-content__ice-item-hover">
+                              <a class="main-content__ice-item-hover-btn"
+                                href="#">
+                                Быстрый просмотр
+                              </a>
+                            </div>
+                          </li>
+                          <!-- Мороженое 9 (end) -->
+                          <!-- Мороженое 10 (start) -->
+                          <li class="main-content__ice-item">
+                            <img class="main-content__ice-img"
+                              src="img/catalog-ice-menthol.png" width="267"
+                              height="267"
+                              alt="Сливочноe с ментоловым сиропом">
+                            <div class="main-content__ice-price">
+                              <p class="main-content__ice-price-text">
+                                435 ₽ <span
+                                  class="main-content__ice-price-text-span">/кг</span>
+                              </p>
+                            </div>
+                            <h3 class="main-content__ice-price-text-header">
+                              Сливочноe с ментоловым сиропом
+                            </h3>
+                            <div class="main-content__ice-item-hover">
+                              <a class="main-content__ice-item-hover-btn"
+                                href="#">
+                                Быстрый просмотр
+                              </a>
+                            </div>
+                          </li>
+                          <!-- Мороженое 10 (end) -->
+                          <!-- Мороженое 11 (start) -->
+                          <li class="main-content__ice-item">
+                            <img class="main-content__ice-img"
+                              src="img/catalog-ice-part-chocolate.png"
+                              width="267"
+                              height="267"
+                              alt="Сливочное с кусочками черного шоколада">
+                            <div class="main-content__ice-price">
+                              <p class="main-content__ice-price-text">
+                                355 ₽ <span
+                                  class="main-content__ice-price-text-span">/кг</span>
+                              </p>
+                            </div>
+                            <h3 class="main-content__ice-price-text-header">
+                              Сливочное с кусочками черного шоколада
+                            </h3>
+                            <div class="main-content__ice-item-hover">
+                              <a class="main-content__ice-item-hover-btn"
+                                href="#">
+                                Быстрый просмотр
+                              </a>
+                            </div>
+                          </li>
+                          <!-- Мороженое 11 (end) -->
+                          <!-- Мороженое 12 (start) -->
+                          <li class="main-content__ice-item">
+                            <img class="main-content__ice-img"
+                              src="img/catalog-ice-mint.png" width="267"
+                              height="267"
+                              alt="Сливочное с мятным сиропом">
+                            <div class="main-content__ice-price">
+                              <p class="main-content__ice-price-text">
+                                420 ₽ <span
+                                  class="main-content__ice-price-text-span">/кг</span>
+                              </p>
+                            </div>
+                            <h3 class="main-content__ice-price-text-header">
+                              Сливочное с мятным сиропом
+                            </h3>
+                            <div class="main-content__ice-item-hover">
+                              <a class="main-content__ice-item-hover-btn"
+                                href="#">
+                                Быстрый просмотр
+                              </a>
+                            </div>
+                          </li>
+                          <!-- Мороженое 12 (end) -->
+                        </ul>
+                        <div class="main-content__paginator">
+                          <p class="visually-hidden" tabindex="-1">
+                            Переключатель страниц в каталоге. Сейчас Вы
+                            находитесь на
+                            первой
+                            странице каталога.
+                          </p>
+                          <ul class="main-content__paginator-wrapper">
+                            <li class="main-content__paginator-item
+                              main-content__paginator-item-pagin">
+                              <a class="main-content__paginator-link
+                                main-content__paginator-link-arrow" href="#">
+                                <img class="main-content__paginator-arrow-img
+                                  main-content__paginator-arrow-img-back"
+                                  src="img/paginator-arrow.svg" width="7"
+                                  height="12"
+                                  alt="Назад">
+                              </a>
+                            </li>
+                            <li class="main-content__paginator-item">
+                              <a class="main-content__paginator-link
+                                main-content__paginator-link-active">
+                                1
+                              </a>
+                            </li>
+                            <li class="main-content__paginator-item">
+                              <a class="main-content__paginator-link" href="#">
+                                2
+                              </a>
+                            </li>
+                            <li class="main-content__paginator-item">
+                              <a class="main-content__paginator-link" href="#">
+                                3
+                              </a>
+                            </li>
+                            <li class="main-content__paginator-item">
+                              <a class="main-content__paginator-link" href="#">
+                                4
+                              </a>
+                            </li>
+                            <li class="main-content__paginator-item">
+                              <a class="main-content__paginator-link" href="#">
+                                5
+                              </a>
+                            </li>
+                            <li class="main-content__paginator-item
+                              main-content__paginator-item-pagin">
+                              <a class="main-content__paginator-link
+                                main-content__paginator-link-arrow" href="#">
+                                <img class="main-content__paginator-arrow-img
+                                  main-content__paginator-arrow-img-next"
+                                  src="img/paginator-arrow.svg" width="7"
+                                  height="12"
+                                  alt="Вперед">
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </section>
+                    <!-- Мороженое (end) -->
+                  </main>
+                  <!--  -->
+                  <!-- Подвал (start) -->
+                  <footer class="footer-ice">
+                    <h2 class="visually-hidden" tabindex="-1">Наши контакты и
+                      документы</h2>
+                    <div class="footer-ice__group">
+                      <a class="footer-ice__link" href="#">
+                        <span class="visually-hidden">Мы ВКонтакте</span>
+                        <img
+                          src="img/social-vk-ico.svg"
+                          width="32"
+                          height="32"
+                          alt="ВКонтакте"
+                          />
+                      </a>
+                      <a class="footer-ice__link" href="#">
+                        <span class="visually-hidden">Мы в Twitter</span>
+                        <img
+                          src="img/social-twitter-ico.svg"
+                          width="32"
+                          height="32"
+                          alt="Twitter"
+                          />
+                      </a>
+                    </div>
+                    <nav class="footer-ice__navigation">
+                      <ul class="footer-ice__items">
+                        <li class="footer-ice__item">
+                          <a class="footer-ice__link footer-ice__link-add"
+                            href="blank.html">
+                            <img
+                              src="img/heart-ico.svg"
+                              width="15"
+                              height="13"
+                              alt="Сердечко"
+                              />
+                            Для поставщиков
+                          </a>
+                        </li>
+                        <li class="footer-ice__item">
+                          <a class="footer-ice__link" href="blank.html"> О
+                            производстве
+                          </a>
+                        </li>
+                      </ul>
+                      <ul class="footer-ice__items">
+                        <li class="footer-ice__item footer-ice__item-special">
+                          <a class="footer-ice__link" href="blank.html"> Наши
+                            документы
+                          </a>
+                        </li>
+                        <li class="footer-ice__item ">
+                          <a class="footer-ice__link" href="blank.html">
+                            Экологические стандарты
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                    <div class="footer-ice__wrapper">
+                      <a
+                        class="footer-ice__link-author"
+                        href="https://htmlacademy.ru/intensive/htmlcss">
+                        <img
+                          class="footer-ice__logo-author"
+                          src="img/logo-author-of-cources.svg"
+                          width="106"
+                          height="39"
+                          alt="Copyright Html Academy"
+                          />
+                      </a>
+                      <p class="footer-ice__text-author">Сделано в HTML Academy
+                        © 2019</p>
+                    </div>
+                  </footer>
+                  <!-- Подвал (end)  -->
+                  <!--  -->
+                </body>
 
-</html>
+              </html>

@@ -22,7 +22,7 @@
     <!-- Header (start) -->
     <header class="ice-header">
       <h2 class="visually-hidden" tabindex="-1">Меню навигации сайта</h2>
-      <a href="index.html">
+      <a class="ice-header__logo-link" href="index.html">
         <img class="ice-header__logo-img"
           src="img/logo.svg" width="154" height="64"
           alt="Логотип Глейси">
@@ -31,148 +31,313 @@
         <ul class="ice-header__inner ice-header__inner-special">
           <li class="ice-header__item">
             <a class="ice-header__item-link ice-header__item-link-add"
-              href="catalog.html"> Каталог </a>
-            <ul class="ice-header__inner-add">
-              <li class="ice-header__item-add">
-                <p class="ice-header__item-add-text">Новинки</p>
-              </li>
-              <li class="ice-header__item-add">
-                <a class="ice-header__item-link-inner" href="catalog.html">
-                  Сливочное
-                </a>
-              </li>
-              <li class="ice-header__item-add">
-                <a class="ice-header__item-link-inner" href="catalog.html">
-                  Щербеты
-                </a>
-              </li>
-              <li class="ice-header__item-add">
-                <a class="ice-header__item-link-inner" href="catalog.html">
-                  Фруктовый лед
-                </a>
-              </li>
-              <li class="ice-header__item-add">
-                <a class="ice-header__item-link-inner" href="catalog.html">
-                  Мелорин
-                </a>
-              </li>
-            </ul>
+              href="catalog.html">
+              Каталог
+            </a>
+            <div class="ice-header__inner-add-wrapper">
+              <ul class="ice-header__inner-add">
+                <li class="ice-header__item-add">
+                  <p class="ice-header__item-add-text">Новинки</p>
+                </li>
+                <li class="ice-header__item-add">
+                  <a class="ice-header__item-link-inner" href="catalog.html">
+                    Сливочное
+                  </a>
+                </li>
+                <li class="ice-header__item-add">
+                  <a class="ice-header__item-link-inner" href="catalog.html">
+                    Щербеты
+                  </a>
+                </li>
+                <li class="ice-header__item-add">
+                  <a class="ice-header__item-link-inner" href="catalog.html">
+                    Фруктовый лед
+                  </a>
+                </li>
+                <li class="ice-header__item-add">
+                  <a class="ice-header__item-link-inner" href="catalog.html">
+                    Мелорин
+                  </a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="ice-header__item">
-            <a class="ice-header__item-link" href="blank.html">
+            <a class="ice-header__item-link ice-header__item-link-active"
+              href="blank.html">
               Доставка и оплата
             </a>
           </li>
           <li class="ice-header__item">
-            <a class="ice-header__item-link" href="blank.html"> О компании </a>
+            <a class="ice-header__item-link ice-header__item-link-active"
+              href="blank.html"> О компании </a>
           </li>
         </ul>
         <div class="ice-header__inner">
           <ul class="ice-header__inner-wrapper ice-header__inner-wrapper-nav">
             <li class="ice-header__wrapper-item">
-              <a class="ice-header__wrapper-link" href="#">
+              <a class="ice-header__wrapper-link ice-header__wrapper-link-find"
+                href="#">
                 Поиск
+                <svg class="ice-header__link-find-img" width="16" height="16"
+                  viewBox="0 0 16 16" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 14.6652L11.0785 9.73294C11.9827 8.48188 12.3826
+                    6.93501 12.1984 5.40134C12.0141 3.86767 11.2594 2.4601
+                    10.0848 1.45982C8.91022 0.45954 7.40233 -0.0598191 5.86234
+                    0.00548954C4.32234 0.0707982 2.86363 0.715967 1.77757
+                    1.81212C0.691516 2.90827 0.0580813 4.3747 0.0038002
+                    5.91849C-0.050481 7.46228 0.478388 8.96976 1.48476
+                    10.1398C2.49113 11.3098 3.90092 12.0563 5.43251
+                    12.2301C6.96409 12.4039 8.50472 11.9922 9.74663
+                    11.0772L14.6586 16L16 14.6652ZM6.08152 10.3767C5.24079
+                    10.3767 4.41895 10.1268 3.71991 9.65874C3.02087 9.19063
+                    2.47604 8.5253 2.15431 7.74687C1.83258 6.96844 1.7484
+                    6.11188 1.91241 5.28551C2.07643 4.45913 2.48128 3.70006
+                    3.07576 3.10427C3.67024 2.50849 4.42766 2.10276 5.25223
+                    1.93838C6.0768 1.77401 6.93149 1.85837 7.70822
+                    2.1808C8.48495 2.50324 9.14883 3.04927 9.61591
+                    3.74983C10.083 4.4504 10.3323 5.27404 10.3323
+                    6.11661C10.3298 7.24568 9.88115 8.3278 9.08451
+                    9.12618C8.28788 9.92456 7.20813 10.3742 6.08152 10.3767Z"
+                    fill="white"/>
+                  </svg>
+                </a>
+                <!-- Форма поиска (start) -->
+                <div class="ice-header__form-search
+                  ice-header__form-search-hidden">
+                  <p class="visually-hidden" tabindex="-1">Форма поиска</p>
+                  <form action="/" class="ice-header__wrapper-form-search">
+                    <input class="ice-header__input-search" type="search"
+                      placeholder="Крем-брюле">
+                  </form>
+                </div>
+                <!-- Форма поиска (end) -->
+              </li>
+              <li class="ice-header__wrapper-item">
+                <a class="ice-header__wrapper-link
+                  ice-header__wrapper-link-log-in" href="#">
+                  <svg class="ice-header__link-log-in-img" width="20"
+                    height="19" viewBox="0 0 20 19" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.04 14.88L12.96 9.5L6.04
+                      4.13V7.04H0V11.96H6.04V14.88Z" fill="white"/>
+                      <path d="M18 0H5C4.46957 0 3.96086 0.210714 3.58579
+                        0.585786C3.21071 0.960859 3 1.46957 3
+                        2V4H5V2H18V17H5V15H3V17C3 17.5304 3.21071 18.0391
+                        3.58579 18.4142C3.96086 18.7893 4.46957 19 5
+                        19H18C18.5304 19 19.0391 18.7893 19.4142 18.4142C19.7893
+                        18.0391 20 17.5304 20 17V2C20 1.46957 19.7893 0.960859
+                        19.4142 0.585786C19.0391 0.210714 18.5304 0 18 0Z"
+                        fill="white"/>
+                      </svg>
+                      Вход
+                    </a>
+                    <!-- Форма входа\регистрации\восстановления пароля (start) -->
+                    <div class="ice-header__form-log-in
+                      ice-header__form-log-in-hidden">
+                      <p class="visually-hidden" tabindex="-1">Форма
+                        входа\регистрации\восстановления пароля</p>
+                      <form action="/" class="ice-header__wrapper-form-log-in">
+                        <div class="ice-header__form-inner">
+                          <input class="ice-header__form-email" type="email"
+                            placeholder="email@example.com">
+                          <input class="ice-header__form-password"
+                            type="password"
+                            placeholder="......">
+                        </div>
+                        <div class="ice-header__form-inner
+                          ice-header__form-inner-add">
+                          <button class="ice-header__button-log-in">
+                            Войти
+                          </button>
+                          <div class="ice-header__form-container-questions">
+                            <a href="blank.html"
+                              class="ice-header__form-question">
+                              Забыли пароль?
+                            </a>
+                            <a href="blank.html"
+                              class="ice-header__form-registration">
+                              Новая регистрация
+                            </a>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <!-- Форма входа\регистрации\восстановления пароля (end) -->
+                  </li>
+                  <li class="ice-header__wrapper-item">
+                    <a class="ice-header__wrapper-link
+                      ice-header__wrapper-link-basket" href="#">
+                      <img
+                        class="ice-header__link-basket-img"
+                        src="img/basket-ico.svg"
+                        width="21" height="20" alt="Иконка корзины">
+                      <img
+                        class="ice-header__link-basket-img-active"
+                        src="img/basket-avtive-ico.svg"
+                        width="21" height="20" alt="Иконка корзины">
+                      Пусто
+                    </a>
+                    <!-- Корзина (start) -->
+                    <div class="ice-header__wrapper-basket
+                      ice-header__wrapper-basket-container-hidden">
+                      <div class="ice-header__wrapper-basket-container">
+                        <div class="ice-header__wrapper-basket-purchases">
+                          <div class="ice-header__wrapper-basket-purchase">
+                            <button type="button"
+                              class="ice-header__purchase-del">
+                              <img class="ice-header__purchase-del-img"
+                                src="/img/cloce-ico.svg" width="11" height="11"
+                                alt="Удалить
+                                позицию"></button>
+                            <img class="ice-header__purchase-img"
+                              src="/img/catalog-ice-yellow-mini.png" width="33"
+                              height="33" alt="Пломбир с
+                              апельсиновым джемом">
+                            <p class="ice-header__purchase-name">Пломбир с
+                              апельсиновым джемом</p>
+                            <p class="ice-header__purchase-price"><span
+                                class="ice-header__purchase-price-add">1,5 кг</span>
+                              х <span
+                                class="ice-header__purchase-price-add-add">200
+                                руб.</span></p>
+                            <p class="ice-header__purchase-price-total">300 руб.</p>
+                          </div>
+                          <div class="ice-header__wrapper-basket-purchase">
+                            <button type="button"
+                              class="ice-header__purchase-del">
+                              <img class="ice-header__purchase-del-img"
+                                src="/img/cloce-ico.svg" width="11" height="11"
+                                alt="Удалить
+                                позицию"></button>
+                            <img class="ice-header__purchase-img"
+                              src="/img/catalog-ice-pink-mini.png" width="33"
+                              height="33" alt="Клубничный пломбир с присыпкой из
+                              белого шоколада">
+                            <p class="ice-header__purchase-name">Клубничный
+                              пломбир
+                              с
+                              присыпкой<br> из белого шоколада</p>
+                            <p class="ice-header__purchase-price"><span
+                                class="ice-header__purchase-price-add">1,5 кг</span>
+                              х <span
+                                class="ice-header__purchase-price-add-add">200
+                                руб.</span></p>
+                            <p class="ice-header__purchase-price-total">450 руб.</p>
+                          </div>
+                        </div>
+                        <div class="ice-header__wrapper-basket-purchases
+                          ice-header__wrapper-basket-purchases-total">
+                          <div class="ice-header__inner-purchases">
+                            <p class="ice-header__inner-purchases-total-price">Итого:
+                              750
+                              руб.</p>
+                          </div>
+                          <a class="ice-header__inner-purchases-button"
+                            href="blank.html">
+                            Оформить заказ
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Корзина (end) -->
+                  </li>
+                </ul>
+                <ul class="ice-header__inner-wrapper
+                  ice-header__inner-wrapper-adress">
+                  <li class="ice-header__wrapper-item">
+                    <p class="ice-header__wrapper-days">с 10 до 20, ежедневно</p>
+                  </li>
+                  <li class="ice-header__wrapper-item">
+                    <a class="ice-header__wrapper-tel" href="tel:+88124502525">8
+                      812
+                      450-25-25</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </header>
+          <!-- Header (end) -->
+          <!--  -->
+          <main class="main-content">
+            <h1 class="visually-hidden" tabindex="-1">Пустая страница-заглушка.</h1>
+            <h2 class="main-content__empty-page">
+              Это пустая страница-заглушка.
+            </h2>
+          </main>
+          <!--  -->
+          <!-- Подвал (start) -->
+          <footer class="footer-ice">
+            <h2 class="visually-hidden" tabindex="-1">Наши контакты и документы</h2>
+            <div class="footer-ice__group">
+              <a class="footer-ice__link" href="#">
+                <span class="visually-hidden">Мы ВКонтакте</span>
+                <img
+                  src="img/social-vk-ico.svg"
+                  width="32"
+                  height="32"
+                  alt="ВКонтакте"
+                  />
               </a>
-            </li>
-            <li class="ice-header__wrapper-item">
-              <a class="ice-header__wrapper-link" href="#">Вход</a>
-            </li>
-            <li class="ice-header__wrapper-item">
-              <a class="ice-header__wrapper-link" href="#">
-                Пусто
+              <a class="footer-ice__link" href="#">
+                <span class="visually-hidden">Мы в Twitter</span>
+                <img
+                  src="img/social-twitter-ico.svg"
+                  width="32"
+                  height="32"
+                  alt="Twitter"
+                  />
               </a>
-            </li>
-          </ul>
-          <ul class="ice-header__inner-wrapper
-            ice-header__inner-wrapper-adress">
-            <li class="ice-header__wrapper-item">
-              <p class="ice-header__wrapper-days">с 10 до 20, ежедневно</p>
-            </li>
-            <li class="ice-header__wrapper-item">
-              <a class="ice-header__wrapper-tel" href="tel:+88124502525">8 812
-                450-25-25</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <!-- Header (end) -->
-    <!--  -->
-    <main class="main-content">
-      <h1 class="visually-hidden" tabindex="-1">Пустая страница-заглушка.</h1>
-      <h2 class="main-content__empty-page">
-        Это пустая страница-заглушка.
-      </h2>
-    </main>
-    <!--  -->
-    <!-- Подвал (start) -->
-    <footer class="footer-ice">
-      <h2 class="visually-hidden" tabindex="-1">Наши контакты и документы</h2>
-      <div class="footer-ice__group">
-        <a class="footer-ice__link" href="#">
-          <span class="visually-hidden">Мы ВКонтакте</span>
-          <img
-            src="img/social-vk-ico.svg"
-            width="32"
-            height="32"
-            alt="ВКонтакте"
-            />
-        </a>
-        <a class="footer-ice__link" href="#">
-          <span class="visually-hidden">Мы в Twitter</span>
-          <img
-            src="img/social-twitter-ico.svg"
-            width="32"
-            height="32"
-            alt="Twitter"
-            />
-        </a>
-      </div>
-      <nav class="footer-ice__navigation">
-        <ul class="footer-ice__items">
-          <li class="footer-ice__item">
-            <a class="footer-ice__link footer-ice__link-add" href="blank.html">
-              <img
-                src="img/heart-ico.svg"
-                width="15"
-                height="13"
-                alt="Сердечко"
-                />
-              Для поставщиков
-            </a>
-          </li>
-          <li class="footer-ice__item">
-            <a class="footer-ice__link" href="blank.html"> О производстве </a>
-          </li>
-        </ul>
-        <ul class="footer-ice__items">
-          <li class="footer-ice__item">
-            <a class="footer-ice__link" href="blank.html"> Наши документы </a>
-          </li>
-          <li class="footer-ice__item">
-            <a class="footer-ice__link" href="blank.html">
-              Экологические стандарты
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div class="footer-ice__wrapper">
-        <a
-          class="footer-ice__link-author"
-          href="https://htmlacademy.ru/intensive/htmlcss">
-          <img
-            class="footer-ice__logo-author"
-            src="img/logo-author-of-cources.svg"
-            width="106"
-            height="39"
-            alt="Copyright Html Academy"
-            />
-        </a>
-        <p class="footer-ice__text-author">Сделано в HTML Academy © 2019</p>
-      </div>
-    </footer>
-    <!-- Подвал (end)  -->
-    <!--  -->
-  </body>
+            </div>
+            <nav class="footer-ice__navigation">
+              <ul class="footer-ice__items">
+                <li class="footer-ice__item">
+                  <a class="footer-ice__link footer-ice__link-add"
+                    href="blank.html">
+                    <img
+                      src="img/heart-ico.svg"
+                      width="15"
+                      height="13"
+                      alt="Сердечко"
+                      />
+                    Для поставщиков
+                  </a>
+                </li>
+                <li class="footer-ice__item">
+                  <a class="footer-ice__link" href="blank.html"> О производстве
+                  </a>
+                </li>
+              </ul>
+              <ul class="footer-ice__items">
+                <li class="footer-ice__item">
+                  <a class="footer-ice__link" href="blank.html"> Наши документы
+                  </a>
+                </li>
+                <li class="footer-ice__item">
+                  <a class="footer-ice__link" href="blank.html">
+                    Экологические стандарты
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="footer-ice__wrapper">
+              <a
+                class="footer-ice__link-author"
+                href="https://htmlacademy.ru/intensive/htmlcss">
+                <img
+                  class="footer-ice__logo-author"
+                  src="img/logo-author-of-cources.svg"
+                  width="106"
+                  height="39"
+                  alt="Copyright Html Academy"
+                  />
+              </a>
+              <p class="footer-ice__text-author">Сделано в HTML Academy © 2019</p>
+            </div>
+          </footer>
+          <!-- Подвал (end)  -->
+          <!--  -->
+        </body>
 
-</html>
+      </html>
