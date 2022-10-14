@@ -1085,12 +1085,19 @@ a {
 }
 
 .main-content__filter-form-legend {
+  margin-top: 1px;
+
   padding-left: 22px;
 
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   color: var(--white-color);
+}
+
+.main-content__filter-form-legend-add {
+  margin-top: -4px;
+  margin-bottom: 5px;
 }
 
 .main-content__filter-next-style {
