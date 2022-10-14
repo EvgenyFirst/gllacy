@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 
-<html lang="ru" class="slider-one-active">
+<html lang="ru">
 
   <head>
 
@@ -115,7 +115,7 @@
               </li>
               <li class="ice-header__wrapper-item">
                 <a class="ice-header__wrapper-link
-                  ice-header__wrapper-link-log-in" href="#">
+                  ice-header__wrapper-link-log-in" href="blank.html">
                   <svg class="ice-header__link-log-in-img" width="20"
                     height="19" viewBox="0 0 20 19" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -238,7 +238,8 @@
                                       height="33" alt="Клубничный пломбир с
                                       присыпкой из
                                       белого шоколада">
-                                    <p class="ice-header__purchase-name">Клубничный
+                                    <p class="ice-header__purchase-name
+                                      ice-header__purchase-name-add">Клубничный
                                       пломбир
                                       с
                                       присыпкой<br> из белого шоколада</p>
@@ -288,7 +289,7 @@
                   </header>
                   <!-- Header (end) -->
                   <!--  -->
-                  <main class="main-content">
+                  <main class="main-content main-content-catalog">
                     <!-- Заголовок и ссылки (start) -->
                     <div class="main-content__bread-crumbs">
                       <ul class="main-content__bread-crumbs-wrapper">
@@ -307,7 +308,8 @@
                           </a>
                         </li>
                         <li class="main-content__bread-crumbs-item">
-                          <a class="main-content__bread-crumbs-link main-content__bread-crumbs-link-add">
+                          <a class="main-content__bread-crumbs-link
+                            main-content__bread-crumbs-link-add">
                             Сливочное
                           </a>
                         </li>
@@ -321,7 +323,206 @@
                         настроек
                         выбора
                         мороженого</h2>
-                      <!--Здест будет фильтр для настроек выбора мороженого -->
+                      <h3 class="main-content__filter-catalog-header">Сливочное
+                        мороженое</h3>
+                      <form class="main-content__filter-catalog-form"
+                        method="post"
+                        action="https://echo.htmlacademy.ru">
+                        <div class="main-content__filter-form-container">
+                          <fieldset class="main-content__filter-form-fieldset">
+                            <span class="visually-hidden">Сортировка по
+                              релевантности</span>
+                            <div class="main-content__filter-form-legend">Сортировка:</div>
+                            <div class="main-content__filter-sorting">
+                              <p class="main-content__filter-text">
+                                <select class="main-content__filter-select"
+                                  name="Релевантность: ">
+                                  <option value="по популярности">по
+                                    популярности</option>
+                                  <option value="сначала недорогие">сначала
+                                    недорогие</option>
+                                  <option value="сначала дорогие">сначала
+                                    дорогие</option>
+                                  <option value="по жирности">по жирности</option>
+                                </select>
+                              </p>
+                            </div>
+                          </fieldset>
+                          <fieldset class="main-content__border">
+                            <div class="main-content__filter-form-legend
+                              main-content__header" tabindex="0">
+                              <span class="visually-hidden">Выбрать стоимость
+                                мороженого от 100 рублей до 500 рублей</span>
+                              Цена:
+                              <div class="main-content__container-item">
+                                <p class="main-content__item">
+                                  <label
+                                    class=""
+                                    tabindex="0">
+                                    <span class="visually-hidden">Настроить
+                                      минимальную стоимость мороженого</span>
+                                    <input
+                                      class="main-content__item"
+                                      type="text" value="100 ₽">
+                                  </label>
+                                </p>
+                                <p>&nbsp;–&nbsp;</p>
+                                <p class="main-content__item">
+                                  <label
+                                    class=""
+                                    tabindex="0">
+                                    <span class="visually-hidden">Настроить
+                                      максимальную стоимость мороженого</span>
+                                    <input
+                                      class="main-content__item"
+                                      type="text" value="500 ₽"></label>
+                                </p>
+                              </div>
+                            </div>
+                            <div class="main-content__filter-next-style
+                              main-content__filter-next-price">
+                              <span class="visually-hidden">Двигайте ползунки
+                                для настройки стоимость мороженого или напишите
+                                цифры
+                                в полях
+                                выше</span>
+                              <div>
+                                <input class="main-content__input-range
+                                  main-content__input-range-one"
+                                  value="100"
+                                  min="0" max="500" step="1" type="range"
+                                  name="Стоимость в сутки, ₽" tabindex="0"
+                                  title="Первый ползунок">
+                                <input class="main-content__input-range
+                                  main-content__input-range-two"
+                                  value="500"
+                                  min="100" max="500" step="1" type="range"
+                                  name="Стоимость в сутки, ₽" tabindex="0"
+                                  title="Второй ползунок">
+                                <span
+                                  class="main-content__input-range-empty-one"></span>
+                                <span
+                                  class="main-content__input-range-empty-two"></span>
+                              </div>
+                            </div>
+                          </fieldset>
+                          <fieldset class="main-content__filter-form-fieldset main-content__filter-form-fieldset-add">
+                            <legend class="main-content__filter-form-legend"
+                              tabindex="0">
+                              <span class="visually-hidden">Выбор процента
+                                жирности мороженого</span>
+                              Жирность:
+                            </legend>
+                            <ul class="main-content__filter-data-one
+                              main-content__filter-next-style
+                              main-content__filter-next-personal">
+                              <li class="main-content__filter-data-one-li">
+                                <input
+                                  class="main-content__filter-data-one-input"
+                                  type="radio"
+                                  name="Жирность: " value="0%"
+                                  id="filter-opacity-one">
+                                <label tabindex="0"
+                                  class="main-content__filter-data-one-text"
+                                  for="filter-opacity-one">0%</label>
+                              </li>
+                              <li class="main-content__filter-data-one-li">
+                                <input
+                                  class="main-content__filter-data-one-input"
+                                  type="radio"
+                                  name="Жирность: " value="до 10%"
+                                  id="filter-opacity-two" checked>
+                                <label tabindex="0"
+                                  class="main-content__filter-data-one-text"
+                                  for="filter-opacity-two">до 10%</label>
+                              </li>
+                              <li class="main-content__filter-data-one-li">
+                                <input
+                                  class="main-content__filter-data-one-input"
+                                  type="radio"
+                                  name="Жирность: " value="до 30%"
+                                  id="filter-opacity-three">
+                                <label tabindex="0"
+                                  class="main-content__filter-data-one-text"
+                                  for="filter-opacity-three">до 30%</label>
+                              </li>
+                              <li class="main-content__filter-data-one-li">
+                                <input
+                                  class="main-content__filter-data-one-input"
+                                  type="radio"
+                                  name="Жирность: " value="выше
+                                  30%"
+                                  id="filter-opacity-four">
+                                <label tabindex="0"
+                                  class="main-content__filter-data-one-text"
+                                  for="filter-opacity-four">выше 30%</label>
+                              </li>
+                            </ul>
+                          </fieldset>
+                        </div>
+                        <div class="main-content__filter-form-container
+                          main-content__filter-form-container-add">
+                          <div class="main-content__filter-form-settings">
+                            <fieldset
+                              class="main-content__filter-form-fieldset">
+                              <legend class="main-content__filter-form-legend"
+                                tabindex="0">
+                                <span class="visually-hidden">Выбор наполнителя
+                                  для мороженого</span>
+                                Наполнители:
+                              </legend>
+                              <ul class="main-content__filter-data-one
+                                main-content__filter-next-style
+                                main-content__filter-data-one-special">
+                                <li class="main-content__filter-data-li">
+                                  <input class="main-content__filter-data-input"
+                                    type="checkbox"
+                                    name="Наполнители: шоколадные"
+                                    id="filter-chocolate"
+                                    checked>
+                                  <label class="main-content__filter-data-label"
+                                    for="filter-chocolate">шоколадные</label>
+                                </li>
+                                <li class="main-content__filter-data-li">
+                                  <input class="main-content__filter-data-input"
+                                    type="checkbox" name="Наполнители: сахарные присыпки" id="filter-sugar"
+                                    checked>
+                                  <label class="main-content__filter-data-label"
+                                    for="filter-sugar">сахарные присыпки</label>
+                                </li>
+                                <li class="main-content__filter-data-li">
+                                  <input class="main-content__filter-data-input"
+                                    type="checkbox" name="Наполнители: фрукты"
+                                    id="filter-fruits">
+                                  <label class="main-content__filter-data-label"
+                                    for="filter-fruits">фрукты</label>
+                                </li>
+                                <li class="main-content__filter-data-li">
+                                  <input class="main-content__filter-data-input"
+                                    type="checkbox" name="Наполнители: сиропы"
+                                    id="filter-syrup">
+                                  <label class="main-content__filter-data-label"
+                                    for="filter-syrup">сиропы</label>
+                                </li>
+                                <li class="main-content__filter-data-li">
+                                  <input class="main-content__filter-data-input"
+                                    type="checkbox" name="Наполнители: джемы"
+                                    id="filter-jam">
+                                  <label class="main-content__filter-data-label"
+                                    for="filter-jam">джемы</label>
+                                </li>
+                              </ul>
+                            </fieldset>
+                          </div>
+                          <div>
+                            <button class="main-content__filter-button"
+                              type="submit">
+                              <span class="visually-hidden">Нажмите эту кнопку
+                                для показа результатов настройки мороженого</span>
+                              Применить</button>
+                          </div>
+                        </div>
+                      </form>
                     </section>
                     <!-- Фильтр для настроек выбора мороженого (end) -->
                     <!--  -->
@@ -440,7 +641,7 @@
                               </p>
                             </div>
                             <h3 class="main-content__ice-price-text-header">
-                              Сливочное с брусничным джемом
+                              Сливочное с брусничным<br> джемом
                             </h3>
                             <div class="main-content__ice-item-hover">
                               <a class="main-content__ice-item-hover-btn"
@@ -536,7 +737,7 @@
                               </p>
                             </div>
                             <h3 class="main-content__ice-price-text-header">
-                              Сливочно-ванильное с кусочками шоколада
+                              Сливочно-ванильное<br> с кусочками шоколада
                             </h3>
                             <div class="main-content__ice-item-hover">
                               <a class="main-content__ice-item-hover-btn"
@@ -691,8 +892,7 @@
                           src="img/social-vk-ico.svg"
                           width="32"
                           height="32"
-                          alt="ВКонтакте"
-                          />
+                          alt="ВКонтакте">
                       </a>
                       <a class="footer-ice__link" href="#">
                         <span class="visually-hidden">Мы в Twitter</span>
@@ -700,8 +900,7 @@
                           src="img/social-twitter-ico.svg"
                           width="32"
                           height="32"
-                          alt="Twitter"
-                          />
+                          alt="Twitter">
                       </a>
                     </div>
                     <nav class="footer-ice__navigation">
@@ -713,8 +912,7 @@
                               src="img/heart-ico.svg"
                               width="15"
                               height="13"
-                              alt="Сердечко"
-                              />
+                              alt="Сердечко">
                             Для поставщиков
                           </a>
                         </li>
@@ -730,7 +928,7 @@
                             документы
                           </a>
                         </li>
-                        <li class="footer-ice__item ">
+                        <li class="footer-ice__item footer-ice__item-special">
                           <a class="footer-ice__link" href="blank.html">
                             Экологические стандарты
                           </a>
@@ -746,8 +944,7 @@
                           src="img/logo-author-of-cources.svg"
                           width="106"
                           height="39"
-                          alt="Copyright Html Academy"
-                          />
+                          alt="Copyright Html Academy">
                       </a>
                       <p class="footer-ice__text-author">Сделано в HTML Academy
                         © 2019</p>
