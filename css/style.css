@@ -75,17 +75,17 @@ html {
   scroll-behavior: smooth;
 
   /*
-  background-image: url("/screens/Index.jpg");
+  background-image: url("../screens/Index.jpg");
   background-position-x: center;
   background-repeat: no-repeat;
   opacity: 0.5;
 
-  background-image: url("/screens/catalog.jpg");
+  background-image: url("../screens/catalog.jpg");
   background-position-x: center;
   background-repeat: no-repeat;
   opacity: 0.5;
 
-  background-image: url("/screens/popup.jpg");
+  background-image: url("../screens/popup.jpg");
   background-position-x: center;
   background-repeat: no-repeat;
   opacity:0.5;
@@ -1181,7 +1181,7 @@ a {
 
   border-radius: 20px;
 
-  background: url("/img/triangle-filter.svg") var(--rgba-white-color);
+  background: url("../img/triangle-filter.svg") var(--rgba-white-color);
   background-repeat: no-repeat;
   background-position-y: 14px;
   background-position-x: 172px;
@@ -1198,7 +1198,7 @@ a {
 .main-content__filter-select:focus {
   color: var(--lighter-black-color);
 
-  background: url("/img/triangle-filter-active.svg") var(--white-color);
+  background: url("../img/triangle-filter-active.svg") var(--white-color);
   background-repeat: no-repeat;
   background-position-y: 14px;
   background-position-x: 172px;
@@ -1209,7 +1209,7 @@ a {
 .main-content__filter-select:active {
   color: var(--lighter-black-color);
 
-  background: url("/img/triangle-filter-active.svg") var(--white-color);
+  background: url("../img/triangle-filter-active.svg") var(--white-color);
   background-repeat: no-repeat;
   background-position-y: 14px;
   background-position-x: 172px;
@@ -1226,7 +1226,7 @@ a {
   width: 11px;
   height: 10px;
 
-  background: url("/img/triangle-filter.svg");
+  background: url("../img/triangle-filter.svg");
 }
 
 .main-content__filter-next-price {
@@ -1323,7 +1323,7 @@ a {
   width: 22px;
   height: 22px;
 
-  background-image: url("/img/radio-off.svg");
+  background-image: url("../img/radio-off.svg");
   background-repeat: no-repeat;
 }
 .main-content__filter-data-one-input:checked + .main-content__filter-data-one-text::before {
@@ -1334,7 +1334,7 @@ a {
   width: 22px;
   height: 22px;
 
-  background-image: url("/img/radio-on.svg");
+  background-image: url("../img/radio-on.svg");
 }
 
 .main-content__filter-data-one-text {
@@ -1386,7 +1386,7 @@ a {
   width: 20px;
   height: 20px;
 
-  background-image: url("/img/checkbox-off.svg");
+  background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
 }
 
@@ -1405,7 +1405,7 @@ a {
   width: 24px;
   height: 20px;
 
-  background-image: url("/img/checkbox-on.svg");
+  background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
 }
 
@@ -1483,7 +1483,7 @@ a {
   border: none;
   border-radius: 24px;
 
-  background-image: url("/img/filter-button.svg");
+  background-image: url("../img/filter-button.svg");
 
   -webkit-transition: 0.6s;
   transition: 0.6s;
