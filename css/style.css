@@ -241,6 +241,10 @@ a {
 
   padding-top: 5px;
 
+  box-shadow: 0 20px 20px var(--rgba-light-black-color);
+
+  border-radius: 4px;
+
   background-color: transparent;
 
   z-index: 1;
@@ -283,6 +287,9 @@ a {
   display: block;
 
   animation: add-menu 0.5s forwards;
+}
+.ice-header__item-link-add:focus + .ice-header__inner-add-wrapper {
+  display: block;
 }
 
 @keyframes add-menu {
@@ -340,7 +347,6 @@ a {
   line-height: 16px;
   color: var(--lighter-black-color);
 }
-
 .ice-header__item-link-inner:hover {
   margin-left: 0;
   margin-right: -10px;
@@ -366,6 +372,13 @@ a {
   z-index: 3;
 }
 .ice-header__item-link:hover {
+  color: var(--lighter-black-color);
+
+  border-radius: 26px;
+
+  background-color: var(--white-color);
+}
+.ice-header__item-link:focus {
   color: var(--lighter-black-color);
 
   border-radius: 26px;
@@ -1361,11 +1374,6 @@ a {
 .main-content__filter-data-one-input + .main-content__filter-data-label {
   display: inline-flex;
   align-items: center;
-
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 .main-content__filter-data-label {
@@ -1414,6 +1422,18 @@ a {
 
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
+}
+.main-content__filter-data-input:checked:focus + .main-content__filter-data-label::before {
+  border: 1px solid var(--black-color);
+
+  top: -2px;
+  left: -1px;
+}
+.main-content__filter-data-input:focus + .main-content__filter-data-label::before {
+  border: 1px solid var(--black-color);
+
+  top: -2px;
+  left: -1px;
 }
 
 .main-content__filter-button {
@@ -1495,6 +1515,9 @@ a {
   -webkit-transition: 0.6s;
   transition: 0.6s;
 }
+.main-content__input-range:focus::-webkit-slider-thumb {
+  border: 1px solid var(--black-color);
+}
 
 .main-content__input-range::-webkit-slider-thumb:hover {
   /*
@@ -1532,6 +1555,9 @@ a {
 
   transition: 0.5s;
 }
+.main-content__input-range:focus::-moz-range-thumb {
+  border: 1px solid var(--black-color);
+}
 
 .main-content__input-range::-ms-thumb {
   z-index: 10;
@@ -1545,6 +1571,9 @@ a {
 
   border-radius: 14px;
   border: 0;
+}
+.main-content__input-range:focus::-ms-thumb {
+  border: 1px solid var(--black-color);
 }
 
 .main-content__input-range::-ms-thumb:hover {
@@ -1957,6 +1986,12 @@ a {
 .main-content__ice-item:hover .ice-header__wrapper-basket {
   position: absolute;
   z-index: 10;
+}
+.main-content__ice-item:focus .main-content__ice-item-hover {
+  display: flex;
+}
+.main-content__ice-item-hover-btn:focus .main-content__ice-item-hover {
+  display: flex;
 }
 
 .main-content__ice-item-hover {
@@ -2815,7 +2850,7 @@ a {
 /* Подвал (end) */
 /* --- */
 /* Форма обратной связи (start) */
-.map-feedback-containerr {
+.map-feedback-container {
   display: flex;
   justify-content: center;
 
@@ -2833,14 +2868,35 @@ a {
   background-size: contain;
 }
 
+.map-feedback__box {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  margin: 0 auto;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.3);
+
+  z-index: 10;
+}
+
 .map-feedback__inner {
-  position: absolute;
+  position: fixed;
   top: 34%;
+  left: 0;
+  right: 0;
 
   width: 431px;
   min-height: 414px;
 
   margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
 
   padding-top: 15px;
   padding-right: 25px;
@@ -2871,7 +2927,7 @@ a {
   height: 17px;
 
   margin-top: -27px;
-  margin-right: -4px;
+  margin-right: -10px;
 
   font-size: 0;
   color: transparent;
@@ -2889,6 +2945,7 @@ a {
   display: block;
 
   position: absolute;
+  left: 0;
 
   width: 20px;
   height: 2px;
@@ -2903,6 +2960,7 @@ a {
   display: block;
 
   position: absolute;
+  left: 0;
 
   width: 20px;
   height: 2px;
