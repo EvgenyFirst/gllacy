@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
 
-<html lang="ru">
+<html lang="ru" class="background-main">
 
   <head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -103,13 +103,14 @@
                   </svg>
                 </a>
                 <!-- Форма поиска (start) -->
-                <div class="ice-header__form-search
-                  ice-header__form-search-hidden">
-                  <p class="visually-hidden" tabindex="-1">Форма поиска</p>
-                  <form action="/" class="ice-header__wrapper-form-search">
-                    <input class="ice-header__input-search" type="search"
-                      placeholder="Крем-брюле">
-                  </form>
+                <div class="ice-header__form-search-wrapper">
+                  <div class="ice-header__form-search">
+                    <p class="visually-hidden" tabindex="-1">Форма поиска</p>
+                    <form action="/" class="ice-header__wrapper-form-search">
+                      <input class="ice-header__input-search" type="search"
+                        placeholder="Крем-брюле">
+                    </form>
+                  </div>
                 </div>
                 <!-- Форма поиска (end) -->
               </li>
@@ -133,35 +134,37 @@
                       Вход
                     </a>
                     <!-- Форма входа\регистрации\восстановления пароля (start) -->
-                    <div class="ice-header__form-log-in
-                      ice-header__form-log-in-hidden">
-                      <p class="visually-hidden" tabindex="-1">Форма
-                        входа\регистрации\восстановления пароля</p>
-                      <form action="/" class="ice-header__wrapper-form-log-in">
-                        <div class="ice-header__form-inner">
-                          <input class="ice-header__form-email" type="email"
-                            placeholder="email@example.com">
-                          <input class="ice-header__form-password"
-                            type="password"
-                            placeholder="......">
-                        </div>
-                        <div class="ice-header__form-inner
-                          ice-header__form-inner-add">
-                          <button class="ice-header__button-log-in">
-                            Войти
-                          </button>
-                          <div class="ice-header__form-container-questions">
-                            <a href="blank.html"
-                              class="ice-header__form-question">
-                              Забыли пароль?
-                            </a>
-                            <a href="blank.html"
-                              class="ice-header__form-registration">
-                              Новая регистрация
-                            </a>
+                    <div class="ice-header__log-in-wrapper">
+                      <div class="ice-header__form-log-in">
+                        <p class="visually-hidden" tabindex="-1">Форма
+                          входа\регистрации\восстановления пароля</p>
+                        <form action="/"
+                          class="ice-header__wrapper-form-log-in">
+                          <div class="ice-header__form-inner">
+                            <input class="ice-header__form-email" type="email"
+                              placeholder="email@example.com">
+                            <input class="ice-header__form-password"
+                              type="password"
+                              placeholder="......">
                           </div>
-                        </div>
-                      </form>
+                          <div class="ice-header__form-inner
+                            ice-header__form-inner-add">
+                            <button class="ice-header__button-log-in">
+                              Войти
+                            </button>
+                            <div class="ice-header__form-container-questions">
+                              <a href="blank.html"
+                                class="ice-header__form-question">
+                                Забыли пароль?
+                              </a>
+                              <a href="blank.html"
+                                class="ice-header__form-registration">
+                                Новая регистрация
+                              </a>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
                     </div>
                     <!-- Форма входа\регистрации\восстановления пароля (end) -->
                   </li>
@@ -192,79 +195,87 @@
                               <span>2</span>&nbsp;товара
                             </a>
                             <!-- Корзина (start) -->
-                            <div class="ice-header__wrapper-basket
-                              ice-header__wrapper-basket-container-hidden">
-                              <div class="ice-header__wrapper-basket-container">
+                            <div class="ice-header__inner-basket">
+                              <div class="ice-header__wrapper-basket">
                                 <div
-                                  class="ice-header__wrapper-basket-purchases">
+                                  class="ice-header__wrapper-basket-container">
                                   <div
-                                    class="ice-header__wrapper-basket-purchase">
-                                    <button type="button"
-                                      class="ice-header__purchase-del">
-                                      <img class="ice-header__purchase-del-img"
-                                        src="/img/cloce-ico.svg" width="11"
-                                        height="11"
-                                        alt="Удалить
-                                        позицию"></button>
-                                    <img class="ice-header__purchase-img"
-                                      src="/img/catalog-ice-yellow-mini.png"
-                                      width="33"
-                                      height="33" alt="Пломбир с
-                                      апельсиновым джемом">
-                                    <p class="ice-header__purchase-name">Пломбир
-                                      с
-                                      апельсиновым джемом</p>
-                                    <p class="ice-header__purchase-price"><span
-                                        class="ice-header__purchase-price-add">1,5
-                                        кг</span>
-                                      х <span
-                                        class="ice-header__purchase-price-add-add">200
-                                        руб.</span></p>
-                                    <p class="ice-header__purchase-price-total">300
-                                      руб.</p>
+                                    class="ice-header__wrapper-basket-purchases">
+                                    <div
+                                      class="ice-header__wrapper-basket-purchase">
+                                      <button type="button"
+                                        class="ice-header__purchase-del">
+                                        <img
+                                          class="ice-header__purchase-del-img"
+                                          src="/img/cloce-ico.svg" width="11"
+                                          height="11"
+                                          alt="Удалить
+                                          позицию"></button>
+                                      <img class="ice-header__purchase-img"
+                                        src="/img/catalog-ice-yellow-mini.png"
+                                        width="33"
+                                        height="33" alt="Пломбир с
+                                        апельсиновым джемом">
+                                      <p class="ice-header__purchase-name">Пломбир
+                                        с
+                                        апельсиновым джемом</p>
+                                      <p class="ice-header__purchase-price"><span
+                                          class="ice-header__purchase-price-add">1,5
+                                          кг</span>
+                                        х <span
+                                          class="ice-header__purchase-price-add-add">200
+                                          руб.</span></p>
+                                      <p
+                                        class="ice-header__purchase-price-total">300
+                                        руб.</p>
+                                    </div>
+                                    <div
+                                      class="ice-header__wrapper-basket-purchase">
+                                      <button type="button"
+                                        class="ice-header__purchase-del">
+                                        <img
+                                          class="ice-header__purchase-del-img"
+                                          src="/img/cloce-ico.svg" width="11"
+                                          height="11"
+                                          alt="Удалить
+                                          позицию"></button>
+                                      <img class="ice-header__purchase-img"
+                                        src="/img/catalog-ice-pink-mini.png"
+                                        width="33"
+                                        height="33" alt="Клубничный пломбир с
+                                        присыпкой из
+                                        белого шоколада">
+                                      <p class="ice-header__purchase-name
+                                        ice-header__purchase-name-add">Клубничный
+                                        пломбир
+                                        с
+                                        присыпкой<br> из белого шоколада</p>
+                                      <p class="ice-header__purchase-price"><span
+                                          class="ice-header__purchase-price-add">1,5
+                                          кг</span>
+                                        х <span
+                                          class="ice-header__purchase-price-add-add">200
+                                          руб.</span></p>
+                                      <p
+                                        class="ice-header__purchase-price-total">450
+                                        руб.</p>
+                                    </div>
                                   </div>
                                   <div
-                                    class="ice-header__wrapper-basket-purchase">
-                                    <button type="button"
-                                      class="ice-header__purchase-del">
-                                      <img class="ice-header__purchase-del-img"
-                                        src="/img/cloce-ico.svg" width="11"
-                                        height="11"
-                                        alt="Удалить
-                                        позицию"></button>
-                                    <img class="ice-header__purchase-img"
-                                      src="/img/catalog-ice-pink-mini.png"
-                                      width="33"
-                                      height="33" alt="Клубничный пломбир с
-                                      присыпкой из
-                                      белого шоколада">
-                                    <p class="ice-header__purchase-name
-                                      ice-header__purchase-name-add">Клубничный
-                                      пломбир
-                                      с
-                                      присыпкой<br> из белого шоколада</p>
-                                    <p class="ice-header__purchase-price"><span
-                                        class="ice-header__purchase-price-add">1,5
-                                        кг</span>
-                                      х <span
-                                        class="ice-header__purchase-price-add-add">200
-                                        руб.</span></p>
-                                    <p class="ice-header__purchase-price-total">450
-                                      руб.</p>
+                                    class="ice-header__wrapper-basket-purchases
+                                    ice-header__wrapper-basket-purchases-total">
+                                    <div class="ice-header__inner-purchases">
+                                      <p
+                                        class="ice-header__inner-purchases-total-price">Итого:
+                                        750
+                                        руб.</p>
+                                    </div>
+                                    <a
+                                      class="ice-header__inner-purchases-button"
+                                      href="blank.html">
+                                      Оформить заказ
+                                    </a>
                                   </div>
-                                </div>
-                                <div class="ice-header__wrapper-basket-purchases
-                                  ice-header__wrapper-basket-purchases-total">
-                                  <div class="ice-header__inner-purchases">
-                                    <p
-                                      class="ice-header__inner-purchases-total-price">Итого:
-                                      750
-                                      руб.</p>
-                                  </div>
-                                  <a class="ice-header__inner-purchases-button"
-                                    href="blank.html">
-                                    Оформить заказ
-                                  </a>
                                 </div>
                               </div>
                             </div>
@@ -387,13 +398,15 @@
                                 выше</span>
                               <div>
                                 <input class="main-content__input-range
-                                  main-content__input-range-one"
+                                  main-content__input-range-one
+                                  main-content__input-range-one-moz"
                                   value="100"
                                   min="0" max="500" step="1" type="range"
                                   name="Стоимость в сутки, ₽"
                                   title="Первый ползунок">
                                 <input class="main-content__input-range
-                                  main-content__input-range-two"
+                                  main-content__input-range-two
+                                  main-content__input-range-two-moz"
                                   value="500"
                                   min="100" max="500" step="1" type="range"
                                   name="Стоимость в сутки, ₽"
@@ -487,8 +500,7 @@
                                 </li>
                                 <li class="main-content__filter-data-li">
                                   <input class="main-content__filter-data-input"
-                                    type="checkbox" name="Наполнители: сахарные
-                                    присыпки" id="filter-sugar"
+                                    type="checkbox" name="Наполнители: сахарные присыпки" id="filter-sugar"
                                     checked>
                                   <label class="main-content__filter-data-label"
                                     for="filter-sugar">сахарные присыпки</label>
@@ -828,7 +840,8 @@
                             первой
                             странице каталога.
                           </p>
-                          <ul class="main-content__paginator-wrapper" tabindex="0">
+                          <ul class="main-content__paginator-wrapper"
+                            tabindex="0">
                             <li class="main-content__paginator-item
                               main-content__paginator-item-pagin">
                               <a class="main-content__paginator-link
@@ -949,7 +962,8 @@
                           height="39"
                           alt="Copyright Html Academy">
                       </a>
-                      <p class="footer-ice__text-author" tabindex="0">Сделано в HTML Academy
+                      <p class="footer-ice__text-author" tabindex="0">Сделано в
+                        HTML Academy
                         © 2019</p>
                     </div>
                   </footer>

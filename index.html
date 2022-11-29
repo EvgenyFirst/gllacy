@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 
-<html lang="ru" class="fix slider-one-active">
+<html lang="ru" class="slider slider-one-main">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -102,13 +102,14 @@
                 </svg>
               </a>
               <!-- Форма поиска (start)  -->
-              <div class="ice-header__form-search
-                ice-header__form-search-hidden">
-                <p class="visually-hidden" tabindex="-1">Форма поиска</p>
-                <form action="/" class="ice-header__wrapper-form-search">
-                  <input class="ice-header__input-search" type="search"
-                    placeholder="Крем-брюле">
-                </form>
+              <div class="ice-header__form-search-wrapper">
+                <div class="ice-header__form-search">
+                  <p class="visually-hidden" tabindex="-1">Форма поиска</p>
+                  <form action="/" class="ice-header__wrapper-form-search">
+                    <input class="ice-header__input-search" type="search"
+                      placeholder="Крем-брюле">
+                  </form>
+                </div>
               </div>
               <!-- Форма поиска (end) -->
             </li>
@@ -132,35 +133,36 @@
                   Вход
                 </a>
                 <!-- Форма входа\регистрации\восстановления пароля (start) -->
-                <div class="ice-header__form-log-in
-                  ice-header__form-log-in-hidden">
-                  <p class="visually-hidden" tabindex="-1">Форма
-                    входа\регистрации\восстановления пароля</p>
-                  <form action="/" class="ice-header__wrapper-form-log-in">
-                    <div class="ice-header__form-inner">
-                      <input class="ice-header__form-email" type="email"
-                        placeholder="email@example.com">
-                      <input class="ice-header__form-password"
-                        type="password"
-                        placeholder="......">
-                    </div>
-                    <div class="ice-header__form-inner
-                      ice-header__form-inner-add">
-                      <button class="ice-header__button-log-in">
-                        Войти
-                      </button>
-                      <div class="ice-header__form-container-questions">
-                        <a href="blank.html"
-                          class="ice-header__form-question">
-                          Забыли пароль?
-                        </a>
-                        <a href="blank.html"
-                          class="ice-header__form-registration">
-                          Новая регистрация
-                        </a>
+                <div class="ice-header__log-in-wrapper">
+                  <div class="ice-header__form-log-in">
+                    <p class="visually-hidden" tabindex="-1">Форма
+                      входа\регистрации\восстановления пароля</p>
+                    <form action="/" class="ice-header__wrapper-form-log-in">
+                      <div class="ice-header__form-inner">
+                        <input class="ice-header__form-email" type="email"
+                          placeholder="email@example.com">
+                        <input class="ice-header__form-password"
+                          type="password"
+                          placeholder="......">
                       </div>
-                    </div>
-                  </form>
+                      <div class="ice-header__form-inner
+                        ice-header__form-inner-add">
+                        <button class="ice-header__button-log-in">
+                          Войти
+                        </button>
+                        <div class="ice-header__form-container-questions">
+                          <a href="blank.html"
+                            class="ice-header__form-question">
+                            Забыли пароль?
+                          </a>
+                          <a href="blank.html"
+                            class="ice-header__form-registration">
+                            Новая регистрация
+                          </a>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
                 </div>
                 <!-- Форма входа\регистрации\восстановления пароля (end) -->
               </li>
@@ -178,68 +180,69 @@
                   Пусто
                 </a>
                 <!-- Корзина (start) -->
-                <div class="ice-header__wrapper-basket
-                  ice-header__wrapper-basket-container-hidden">
-                  <div class="ice-header__wrapper-basket-container">
-                    <div class="ice-header__wrapper-basket-purchases"
-                      tabindex="0">
-                      <div class="ice-header__wrapper-basket-purchase"
+                <div class="ice-header__inner-basket">
+                  <div class="ice-header__wrapper-basket">
+                    <div class="ice-header__wrapper-basket-container">
+                      <div class="ice-header__wrapper-basket-purchases"
                         tabindex="0">
-                        <button type="button"
-                          class="ice-header__purchase-del">
-                          <img class="ice-header__purchase-del-img"
-                            src="/img/cloce-ico.svg" width="11" height="11"
-                            alt="Удалить
-                            позицию"></button>
-                        <img class="ice-header__purchase-img"
-                          src="/img/catalog-ice-yellow-mini.png" width="33"
-                          height="33" alt="Пломбир с
-                          апельсиновым джемом">
-                        <p class="ice-header__purchase-name">Пломбир с
-                          апельсиновым джемом</p>
-                        <p class="ice-header__purchase-price"><span
-                            class="ice-header__purchase-price-add">1,5 кг</span>
-                          х <span
-                            class="ice-header__purchase-price-add-add">200
-                            руб.</span></p>
-                        <p class="ice-header__purchase-price-total">300 руб.</p>
+                        <div class="ice-header__wrapper-basket-purchase"
+                          tabindex="0">
+                          <button type="button"
+                            class="ice-header__purchase-del">
+                            <img class="ice-header__purchase-del-img"
+                              src="/img/cloce-ico.svg" width="11" height="11"
+                              alt="Удалить
+                              позицию"></button>
+                          <img class="ice-header__purchase-img"
+                            src="/img/catalog-ice-yellow-mini.png" width="33"
+                            height="33" alt="Пломбир с
+                            апельсиновым джемом">
+                          <p class="ice-header__purchase-name">Пломбир с
+                            апельсиновым джемом</p>
+                          <p class="ice-header__purchase-price"><span
+                              class="ice-header__purchase-price-add">1,5 кг</span>
+                            х <span
+                              class="ice-header__purchase-price-add-add">200
+                              руб.</span></p>
+                          <p class="ice-header__purchase-price-total">300 руб.</p>
+                        </div>
+                        <div class="ice-header__wrapper-basket-purchase"
+                          tabindex="0">
+                          <button type="button"
+                            class="ice-header__purchase-del">
+                            <img class="ice-header__purchase-del-img"
+                              src="/img/cloce-ico.svg" width="11" height="11"
+                              alt="Удалить
+                              позицию"></button>
+                          <img class="ice-header__purchase-img"
+                            src="/img/catalog-ice-pink-mini.png" width="33"
+                            height="33" alt="Клубничный пломбир с присыпкой из
+                            белого шоколада">
+                          <p class="ice-header__purchase-name">Клубничный
+                            пломбир
+                            с
+                            присыпкой<br> из белого шоколада</p>
+                          <p class="ice-header__purchase-price"><span
+                              class="ice-header__purchase-price-add">1,5 кг</span>
+                            х <span
+                              class="ice-header__purchase-price-add-add">200
+                              руб.</span></p>
+                          <p class="ice-header__purchase-price-total">450 руб.</p>
+                        </div>
                       </div>
-                      <div class="ice-header__wrapper-basket-purchase"
-                        tabindex="0">
-                        <button type="button"
-                          class="ice-header__purchase-del">
-                          <img class="ice-header__purchase-del-img"
-                            src="/img/cloce-ico.svg" width="11" height="11"
-                            alt="Удалить
-                            позицию"></button>
-                        <img class="ice-header__purchase-img"
-                          src="/img/catalog-ice-pink-mini.png" width="33"
-                          height="33" alt="Клубничный пломбир с присыпкой из
-                          белого шоколада">
-                        <p class="ice-header__purchase-name">Клубничный
-                          пломбир
-                          с
-                          присыпкой<br> из белого шоколада</p>
-                        <p class="ice-header__purchase-price"><span
-                            class="ice-header__purchase-price-add">1,5 кг</span>
-                          х <span
-                            class="ice-header__purchase-price-add-add">200
-                            руб.</span></p>
-                        <p class="ice-header__purchase-price-total">450 руб.</p>
+                      <div class="ice-header__wrapper-basket-purchases
+                        ice-header__wrapper-basket-purchases-total">
+                        <div class="ice-header__inner-purchases">
+                          <p class="ice-header__inner-purchases-total-price"
+                            tabindex="0">Итого:
+                            750
+                            руб.</p>
+                        </div>
+                        <a class="ice-header__inner-purchases-button"
+                          href="blank.html">
+                          Оформить заказ
+                        </a>
                       </div>
-                    </div>
-                    <div class="ice-header__wrapper-basket-purchases
-                      ice-header__wrapper-basket-purchases-total">
-                      <div class="ice-header__inner-purchases">
-                        <p class="ice-header__inner-purchases-total-price"
-                          tabindex="0">Итого:
-                          750
-                          руб.</p>
-                      </div>
-                      <a class="ice-header__inner-purchases-button"
-                        href="blank.html">
-                        Оформить заказ
-                      </a>
                     </div>
                   </div>
                 </div>
@@ -269,6 +272,26 @@
           <!-- Slider (start) -->
           <div class="main-content__option-wrapper">
             <!-- Слайды (start) -->
+            <div class="main-content__radio">
+              <p class="visually-hidden" tabindex="-1">Для выбора слайда с
+                мороженым нажимаете кнопку стрелки вправо или влево</p>
+              <input
+                class="main-content__option-radio-button
+                main-content__option-radio-button-one"
+                type="radio"
+                name="ice-cream-slider" tabindex="0"
+                checked>
+              <input
+                class="main-content__option-radio-button
+                main-content__option-radio-button-two"
+                type="radio"
+                name="ice-cream-slider" tabindex="0">
+              <input
+                class="main-content__option-radio-button
+                main-content__option-radio-button-three"
+                type="radio"
+                name="ice-cream-slider" tabindex="0">
+            </div>
             <div class="main-content__option-slides">
               <!-- Первый слайд (start) -->
               <div
@@ -296,7 +319,8 @@
                   </h3>
                   <button
                     class="main-content__option-product-button"
-                    type="button">
+                    type="button"
+                    tabindex="0">
                     Давайте оба!
                   </button>
                 </div>
@@ -306,7 +330,7 @@
               <div
                 class="main-content__option-slide
                 main-content__option-slide-two
-                main-content__slide-hide">
+                main-content__slide-hide-two">
                 <div class="main-content__option-inner">
                   <img
                     class="main-content__option-img
@@ -329,7 +353,7 @@
                   </h3>
                   <button
                     class="main-content__option-product-button"
-                    type="button">
+                    type="button" tabindex="0">
                     Давайте оба!
                   </button>
                 </div>
@@ -339,7 +363,7 @@
               <div
                 class="main-content__option-slide
                 main-content__option-slide-three
-                main-content__slide-hide">
+                main-content__slide-hide-three">
                 <div class="main-content__option-inner">
                   <img
                     class="main-content__option-img
@@ -364,29 +388,12 @@
                   </h3>
                   <button
                     class="main-content__option-product-button"
-                    type="button">
+                    type="button" tabindex="0">
                     Давайте оба!
                   </button>
                 </div>
               </div>
               <!-- Третий слайд (end) -->
-            </div>
-            <div class="main-content__radio">
-              <p class="visually-hidden" tabindex="-1">Для выбора слайда с
-                мороженым нажимаете кнопку стрелки вправо или влево</p>
-              <input
-                class="main-content__option-radio-button"
-                type="radio"
-                name="ice-cream-slider"
-                checked>
-              <input
-                class="main-content__option-radio-button"
-                type="radio"
-                name="ice-cream-slider">
-              <input
-                class="main-content__option-radio-button"
-                type="radio"
-                name="ice-cream-slider">
             </div>
             <!-- Слайды (end) -->
           </div>
@@ -684,11 +691,13 @@
                   и не
                   слать всякой ненужной ерунды. Честно =)
                 </p>
-                <form class="main-content__article-add-form" action="/">
+                <form class="main-content__article-add-form" method="post"
+                  action="https://echo.htmlacademy.ru">
                   <input
                     class="main-content__article-add-form-placeholder"
                     type="email"
-                    placeholder="email@example.com">
+                    placeholder="email@example.com"
+                    required>
                   <button class="main-content__article-add-button"
                     type="submit">
                     Отправить
@@ -705,16 +714,28 @@
       <!-- Карта (start) -->
       <section class="map">
         <h2 class="visually-hidden" tabindex="-1">Карта (местоположение)</h2>
-        <img class="map__map-background"
-          src="img/map.jpg"
-          width="1200"
-          height="430"
-          alt="Карта" tabindex="0">
-        <img class="map__pin-ico"
-          src="img/pin-ico.svg"
-          width="80"
-          height="140"
-          alt="Местоположение Глейси" tabindex="0">
+        <div>
+          <div class="map__container">
+            <img class="map__map-background"
+              src="img/map.jpg"
+              width="1200"
+              height="430"
+              alt="Карта" tabindex="0">
+            <img class="map__pin-ico"
+              src="img/pin-ico.svg"
+              width="80"
+              height="140"
+              alt="Местоположение Глейси" tabindex="0">
+          </div>
+          <div class="map__dynamic map__dynamic-hidden">
+            <div class="map__dynamic-iframe-custom">
+              <iframe class="map__dynamic-iframe"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037861610246!2d30.3230474!3d59.9387165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1668758881693!5m2!1sru!2sru"
+                height="430" style="border:0;" allowfullscreen=""
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
         <div class="map__wrapper">
           <div class="map__inner">
             <p class="map__info" tabindex="0">Адрес главного офиса<br> и
@@ -805,8 +826,7 @@
       <!-- Подвал (end)  -->
       <!--  -->
       <!-- Форма обратной связи (start)-->
-      <div class="map-feedback map-feedback-container map-feedback-hidden"
-        tabindex="0">
+      <div class="map-feedback map-feedback-container map-feedback-hidden">
         <p class="visually-hidden" tabindex="-1">Форма обратной связи</p>
         <div class="map-feedback__box">
           <div class="map-feedback__inner">
@@ -818,19 +838,27 @@
                 Закрыть
               </button>
             </div>
-            <form class="map-feedback__down" action="/">
-              <input class="map-feedback__down-input"
+            <form class="map-feedback__down" method="post"
+              action="https://echo.htmlacademy.ru">
+              <input class="map-feedback__down-input
+                map-feedback__down-input-text"
                 type="text"
+                name="userNameSurname"
                 placeholder="Имя Фамилия"
-                maxlength="15">
+                maxlength="15"
+                required>
               <input class="map-feedback__down-input
                 map-feedback__down-input-email"
                 type="email"
+                name="userMail"
                 placeholder="email@example.com"
-                maxlength="15">
+                maxlength="15"
+                required>
               <textarea class="map-feedback__down-input
                 map-feedback__down-input-free"
-                placeholder="В свободной форме"></textarea>
+                name="userText"
+                placeholder="В свободной форме"
+                required></textarea>
               <button class="map-feedback__down-btn" type="submit">
                 Отправить
               </button>
@@ -839,5 +867,10 @@
         </div>
       </div>
       <!-- Форма обратной связи (end) -->
+
+      <script src="js/slider.min.js"></script>
+      <script src="js/feedbackForm.min.js"></script>
+      <script src="js/map.min.js"></script>
+
     </body>
   </html>
